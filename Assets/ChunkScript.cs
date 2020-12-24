@@ -10,7 +10,7 @@ using System.Linq;
 public class ChunkScript : MonoBehaviour
 {
 
-    private GameObject[] spaces = new GameObject[(int)Math.Pow(Constants.chunk_width_tiles,3)];
+    private GameObject[] spaces = new GameObject[2000];
 
 
     public ChunkScript(Vector3 v)
@@ -20,20 +20,35 @@ public class ChunkScript : MonoBehaviour
         string path = constant.data_path + "chunk_" + ((int)v.x).ToString() + "_" + ((int)v.y).ToString() + ".json";// + "_" + ((int)v.z).ToString();
 
 
+
         File chunkFile = new File(path);
 
         string data = chunkFile.Data();
 
         Debug.Log(data);
 
-        var temp = JsonUtility.FromJson<List<UnitSpaceLoader>>(data);
-        Debug.Log(temp.ToList().Count);
+        JsonArrayParser parser = new JsonArrayParser(data);
+
+        List<UnitSpaceInfo> buffer = new List<UnitSpaceInfo>();
+        
+        Debug.Log(parser.ar.Count);
+        foreach(string s in parser.ar){
+            buffer.Add(JsonUtility.FromJson<UnitSpaceInfo>(s));
+        }
+
+        Debug.Log(buffer.Count);
+        Debug.Log(buffer[0].type);
 
         GameObject root = GameObject.Find("UnitSpace");
-        for(int z=0; z<Constants.chunk_width_tiles; z++){
+        int iterator = 0;
+        for(int z=0; z<5; z++){
             for(int y=0; y<Constants.chunk_width_tiles; y++){
                 for(int x=0; x<Constants.chunk_width_tiles; x++){
-                    
+                    if(buffer[iterator].type == "terrain"){
+                        spaces[iterator] = UnityEngine.Object.Instantiate(GameObject.Find("UnitSpace"));
+                        spaces[iterator].transform.position = new Vector3(x,z,y);
+                    }
+                    iterator++;
                 }
             }
         }
