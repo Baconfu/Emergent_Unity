@@ -41,8 +41,9 @@ public class DebugTextScript : MonoBehaviour
         DebugText.text = "";
         
         if (getDebugDisplayStatus(debugCategory.PlayerInfo)){
-            DebugText.text += GameObject.Find("Player").transform.position.ToString() + "\n";   
-            
+            DebugText.text += "Player position: " + GameObject.Find("Player").transform.position.ToString() + "\n";   
+            DebugText.text += "Player velocity: " + (GameObject.Find("Player").GetComponent<Rigidbody>().velocity+GameObject.Find("Player").GetComponent<PlayerController>().m_Velocity).ToString() + "\n";  
+
             //determining the terrain block underneath the mouse cursor
             RaycastHit hit;
             Physics.Raycast(GameObject.Find("Camera").GetComponent<Camera>().ScreenPointToRay(Input.mousePosition), out hit);

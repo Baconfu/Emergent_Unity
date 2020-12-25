@@ -13,1260 +13,570 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2020-12-24T22:59:03.262+13:00
-  initializedAtString: 2020-12-24T19:55:18.329+13:00
+  lastUpdatedAtString: 2020-12-25T19:09:07.004+13:00
+  initializedAtString: 2020-12-25T18:52:56.926+13:00
   entries:
-  - path: Assets\materials\NoFrictionPhysicMaterial.physicMaterial
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\materials\NoFrictionPhysicMaterial.physicMaterial
-    projectPath: Assets\materials\NoFrictionPhysicMaterial.physicMaterial
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\materials\NoFrictionPhysicMaterial.physicMaterial.meta
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\materials\NoFrictionPhysicMaterial.physicMaterial.meta
-    projectPath: Assets\materials\NoFrictionPhysicMaterial.physicMaterial.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\materials\TempPlayerMaterial.mat
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\materials\TempPlayerMaterial.mat
-    projectPath: Assets\materials\TempPlayerMaterial.mat
+  - path: Assembly-CSharp.csproj
+    fullPath: C:\Users\lixia\Emergent\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\prefabs\Player.prefab
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\prefabs\Player.prefab
-    projectPath: Assets\prefabs\Player.prefab
+  - path: Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\lixia\Emergent\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\prefabs\UnitSpace.prefab
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\prefabs\UnitSpace.prefab
-    projectPath: Assets\prefabs\UnitSpace.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\scene.unity
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\scene.unity
-    projectPath: Assets\scene.unity
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\scripts\ChunkScript.cs
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\scripts\ChunkScript.cs
-    projectPath: Assets\scripts\ChunkScript.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\scripts\DebugScript.cs
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\scripts\DebugScript.cs
-    projectPath: Assets\scripts\DebugScript.cs
+  - path: Assets\scripts\Debug\DebugTextScript.cs
+    fullPath: C:\Users\lixia\Emergent\Assets\scripts\Debug\DebugTextScript.cs
+    projectPath: Assets\scripts\Debug\DebugTextScript.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Assets\scripts\PlayerController.cs
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Assets\scripts\PlayerController.cs
+    fullPath: C:\Users\lixia\Emergent\Assets\scripts\PlayerController.cs
     projectPath: Assets\scripts\PlayerController.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Emergent.sln
+    fullPath: C:\Users\lixia\Emergent\Emergent.sln
+    projectPath: Emergent.sln
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\ArtifactDB
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ArtifactDB
+    fullPath: C:\Users\lixia\Emergent\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\Artifacts\00\0056cf0f8a7470ccd7749fd2fa9ee302
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\00\0056cf0f8a7470ccd7749fd2fa9ee302
-    projectPath: Library\Artifacts\00\0056cf0f8a7470ccd7749fd2fa9ee302
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\00\008eba1b2f1fd574096e4225351d4c41
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\00\008eba1b2f1fd574096e4225351d4c41
-    projectPath: Library\Artifacts\00\008eba1b2f1fd574096e4225351d4c41
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\00\00f52afdb21e67f0f06c6474a02d0be1
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\00\00f52afdb21e67f0f06c6474a02d0be1
-    projectPath: Library\Artifacts\00\00f52afdb21e67f0f06c6474a02d0be1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\01\0187f80e68cbd740ce3ad421a4d5260b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\01\0187f80e68cbd740ce3ad421a4d5260b
-    projectPath: Library\Artifacts\01\0187f80e68cbd740ce3ad421a4d5260b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\09\0928ff41e9bec96ab8713cd0ee480c80
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\09\0928ff41e9bec96ab8713cd0ee480c80
-    projectPath: Library\Artifacts\09\0928ff41e9bec96ab8713cd0ee480c80
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\0f\0f267260e834d0be421ca0e71b6e4d91
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\0f\0f267260e834d0be421ca0e71b6e4d91
-    projectPath: Library\Artifacts\0f\0f267260e834d0be421ca0e71b6e4d91
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\10\101d9f52a519ce90734fdf238aab7d62
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\10\101d9f52a519ce90734fdf238aab7d62
-    projectPath: Library\Artifacts\10\101d9f52a519ce90734fdf238aab7d62
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\11\1167834a527db346936da36ffbb1dad2
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\11\1167834a527db346936da36ffbb1dad2
-    projectPath: Library\Artifacts\11\1167834a527db346936da36ffbb1dad2
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\14\14885fd0b1cdbc536832f588a1d677c2
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\14\14885fd0b1cdbc536832f588a1d677c2
-    projectPath: Library\Artifacts\14\14885fd0b1cdbc536832f588a1d677c2
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\24\2426144b0bf79cadadebd2a2b951ef6a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\24\2426144b0bf79cadadebd2a2b951ef6a
-    projectPath: Library\Artifacts\24\2426144b0bf79cadadebd2a2b951ef6a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\26\26a03bd5ed49dfdf54060bc09e9ff6c4
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\26\26a03bd5ed49dfdf54060bc09e9ff6c4
-    projectPath: Library\Artifacts\26\26a03bd5ed49dfdf54060bc09e9ff6c4
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\26\26d209d5d2262d0e05fb844575923f67
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\26\26d209d5d2262d0e05fb844575923f67
-    projectPath: Library\Artifacts\26\26d209d5d2262d0e05fb844575923f67
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\26\26de8227dc7b042188a7877385b26e08
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\26\26de8227dc7b042188a7877385b26e08
-    projectPath: Library\Artifacts\26\26de8227dc7b042188a7877385b26e08
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\28\281689effbd743d361479825dd7809fc
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\28\281689effbd743d361479825dd7809fc
-    projectPath: Library\Artifacts\28\281689effbd743d361479825dd7809fc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\28\284f7a130d124bad6dec066db77ee0ba
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\28\284f7a130d124bad6dec066db77ee0ba
-    projectPath: Library\Artifacts\28\284f7a130d124bad6dec066db77ee0ba
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\29\295218161e77e9b90ae42f938ac084d8
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\29\295218161e77e9b90ae42f938ac084d8
-    projectPath: Library\Artifacts\29\295218161e77e9b90ae42f938ac084d8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\2a\2a194a1a8571450716bd419b4f4b5e70
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\2a\2a194a1a8571450716bd419b4f4b5e70
-    projectPath: Library\Artifacts\2a\2a194a1a8571450716bd419b4f4b5e70
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\2e\2ed36ed6a7a863895cfd3961433184f9
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\2e\2ed36ed6a7a863895cfd3961433184f9
-    projectPath: Library\Artifacts\2e\2ed36ed6a7a863895cfd3961433184f9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\33\33b47a1c4b05a260e8246923c69e14e7
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\33\33b47a1c4b05a260e8246923c69e14e7
-    projectPath: Library\Artifacts\33\33b47a1c4b05a260e8246923c69e14e7
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\34\346d1a90de6d6d5c71edb287769c86c3
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\34\346d1a90de6d6d5c71edb287769c86c3
-    projectPath: Library\Artifacts\34\346d1a90de6d6d5c71edb287769c86c3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\35\3543a5fb2bda8f9603d24fbd674f4236
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\35\3543a5fb2bda8f9603d24fbd674f4236
-    projectPath: Library\Artifacts\35\3543a5fb2bda8f9603d24fbd674f4236
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\39\393e3d2ac109e2e91e0efd01cb5e4d71
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\39\393e3d2ac109e2e91e0efd01cb5e4d71
-    projectPath: Library\Artifacts\39\393e3d2ac109e2e91e0efd01cb5e4d71
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\39\39e5059302b296d277be8c3164d523eb
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\39\39e5059302b296d277be8c3164d523eb
-    projectPath: Library\Artifacts\39\39e5059302b296d277be8c3164d523eb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\3b\3b4c4345c57613a17ad91c01a2306197
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\3b\3b4c4345c57613a17ad91c01a2306197
-    projectPath: Library\Artifacts\3b\3b4c4345c57613a17ad91c01a2306197
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\3c\3c7f5f23b091fc433e1aa2df266d7b6b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\3c\3c7f5f23b091fc433e1aa2df266d7b6b
-    projectPath: Library\Artifacts\3c\3c7f5f23b091fc433e1aa2df266d7b6b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\44\446c064516ae7d4b9629afcf3d1dbc39
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\44\446c064516ae7d4b9629afcf3d1dbc39
-    projectPath: Library\Artifacts\44\446c064516ae7d4b9629afcf3d1dbc39
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\47\4704130cc4118e61b8e43b58f7635578
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\47\4704130cc4118e61b8e43b58f7635578
-    projectPath: Library\Artifacts\47\4704130cc4118e61b8e43b58f7635578
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\47\4796333e8ccae32235af63e939b06672
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\47\4796333e8ccae32235af63e939b06672
-    projectPath: Library\Artifacts\47\4796333e8ccae32235af63e939b06672
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\48\48b33de2b222ca191f4576ed49f4fc74
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\48\48b33de2b222ca191f4576ed49f4fc74
-    projectPath: Library\Artifacts\48\48b33de2b222ca191f4576ed49f4fc74
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\49\499b122ec523bde52b8c0fd60bc62ea5
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\49\499b122ec523bde52b8c0fd60bc62ea5
-    projectPath: Library\Artifacts\49\499b122ec523bde52b8c0fd60bc62ea5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\49\49f458cd3db43926ec22e3eefcf9a258
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\49\49f458cd3db43926ec22e3eefcf9a258
-    projectPath: Library\Artifacts\49\49f458cd3db43926ec22e3eefcf9a258
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\53\53e69d6fbc7ec75d564cf9b475eb3847
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\53\53e69d6fbc7ec75d564cf9b475eb3847
-    projectPath: Library\Artifacts\53\53e69d6fbc7ec75d564cf9b475eb3847
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\55\55103f4b49407f7b610189cab17c20ea
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\55\55103f4b49407f7b610189cab17c20ea
-    projectPath: Library\Artifacts\55\55103f4b49407f7b610189cab17c20ea
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\56\56394798fd6422b27d880ffa4f6d3261
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\56\56394798fd6422b27d880ffa4f6d3261
-    projectPath: Library\Artifacts\56\56394798fd6422b27d880ffa4f6d3261
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\57\571108c0796dd51c24edfa31f5003705
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\57\571108c0796dd51c24edfa31f5003705
-    projectPath: Library\Artifacts\57\571108c0796dd51c24edfa31f5003705
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\5a\5a324c8812f381dd46347f11adb5d3b8
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\5a\5a324c8812f381dd46347f11adb5d3b8
-    projectPath: Library\Artifacts\5a\5a324c8812f381dd46347f11adb5d3b8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\61\61ea7a8bafe5aff730aa5ed03722b633
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\61\61ea7a8bafe5aff730aa5ed03722b633
-    projectPath: Library\Artifacts\61\61ea7a8bafe5aff730aa5ed03722b633
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\63\6395097ad44de3d426587313844cba07
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\63\6395097ad44de3d426587313844cba07
-    projectPath: Library\Artifacts\63\6395097ad44de3d426587313844cba07
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\66\66508409a686d1431c6602f83cc85fe4
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\66\66508409a686d1431c6602f83cc85fe4
-    projectPath: Library\Artifacts\66\66508409a686d1431c6602f83cc85fe4
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\68\687c044fe2353ec3532bc12fe0de3397
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\68\687c044fe2353ec3532bc12fe0de3397
-    projectPath: Library\Artifacts\68\687c044fe2353ec3532bc12fe0de3397
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\6b\6bc2123c8d7ef92d480ca3294e577318
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\6b\6bc2123c8d7ef92d480ca3294e577318
-    projectPath: Library\Artifacts\6b\6bc2123c8d7ef92d480ca3294e577318
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\6c\6c9d66693b9911af7d8672a1935841bf
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\6c\6c9d66693b9911af7d8672a1935841bf
-    projectPath: Library\Artifacts\6c\6c9d66693b9911af7d8672a1935841bf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\6d\6d345b37cd4991de33f7417bf27b7403
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\6d\6d345b37cd4991de33f7417bf27b7403
-    projectPath: Library\Artifacts\6d\6d345b37cd4991de33f7417bf27b7403
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\6e\6e9cbf2248cce50c5e54cf5dcb58e4f5
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\6e\6e9cbf2248cce50c5e54cf5dcb58e4f5
-    projectPath: Library\Artifacts\6e\6e9cbf2248cce50c5e54cf5dcb58e4f5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\7a\7aa82c2a9cc1b94432092de8c412385a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\7a\7aa82c2a9cc1b94432092de8c412385a
-    projectPath: Library\Artifacts\7a\7aa82c2a9cc1b94432092de8c412385a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\7c\7cadd8e9ef3d4a4c64cdc2ca9bd8eb18
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\7c\7cadd8e9ef3d4a4c64cdc2ca9bd8eb18
-    projectPath: Library\Artifacts\7c\7cadd8e9ef3d4a4c64cdc2ca9bd8eb18
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\81\818f01193b1fac69e1522b308cec117f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\81\818f01193b1fac69e1522b308cec117f
-    projectPath: Library\Artifacts\81\818f01193b1fac69e1522b308cec117f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\82\8247979ae7c42637a0cf6f81e8dad209
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\82\8247979ae7c42637a0cf6f81e8dad209
-    projectPath: Library\Artifacts\82\8247979ae7c42637a0cf6f81e8dad209
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\85\8593e1154ea16da73f2138d6a8e563f7
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\85\8593e1154ea16da73f2138d6a8e563f7
-    projectPath: Library\Artifacts\85\8593e1154ea16da73f2138d6a8e563f7
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\89\896f02e673e6a71e2d11d64674592ecf
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\89\896f02e673e6a71e2d11d64674592ecf
-    projectPath: Library\Artifacts\89\896f02e673e6a71e2d11d64674592ecf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\8d\8d88800cfb288f8717a938cbe5e1a67e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\8d\8d88800cfb288f8717a938cbe5e1a67e
-    projectPath: Library\Artifacts\8d\8d88800cfb288f8717a938cbe5e1a67e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\9a\9a256a400de89031ce7b91d93475adfb
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\9a\9a256a400de89031ce7b91d93475adfb
-    projectPath: Library\Artifacts\9a\9a256a400de89031ce7b91d93475adfb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\a2\a2f3fd5ad5a520534e513e5dc856955a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\a2\a2f3fd5ad5a520534e513e5dc856955a
-    projectPath: Library\Artifacts\a2\a2f3fd5ad5a520534e513e5dc856955a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\a3\a3421edb35799ba542c3fffbe6dd09b5
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\a3\a3421edb35799ba542c3fffbe6dd09b5
-    projectPath: Library\Artifacts\a3\a3421edb35799ba542c3fffbe6dd09b5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\a5\a56e260f324cc8db35691ff502db93bc
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\a5\a56e260f324cc8db35691ff502db93bc
-    projectPath: Library\Artifacts\a5\a56e260f324cc8db35691ff502db93bc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\ab\ab010118393d51e072fc41e02b083aca
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\ab\ab010118393d51e072fc41e02b083aca
-    projectPath: Library\Artifacts\ab\ab010118393d51e072fc41e02b083aca
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\ae\ae386f8b1c78d65bb35f7e44e1871d29
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\ae\ae386f8b1c78d65bb35f7e44e1871d29
-    projectPath: Library\Artifacts\ae\ae386f8b1c78d65bb35f7e44e1871d29
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\b1\b1722de59ca8e2733c1d4e090d1070fe
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b1\b1722de59ca8e2733c1d4e090d1070fe
-    projectPath: Library\Artifacts\b1\b1722de59ca8e2733c1d4e090d1070fe
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\b3\b349f54a965c6cd643a68f3ba4a4a992
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b3\b349f54a965c6cd643a68f3ba4a4a992
-    projectPath: Library\Artifacts\b3\b349f54a965c6cd643a68f3ba4a4a992
+  - path: Library\Artifacts\02\0201f89d2bd40d940204d1b27cf38e27
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\02\0201f89d2bd40d940204d1b27cf38e27
+    projectPath: Library\Artifacts\02\0201f89d2bd40d940204d1b27cf38e27
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: Library\Artifacts\b3\b354c471aab9f64c2b718e02586e4a6c
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b3\b354c471aab9f64c2b718e02586e4a6c
-    projectPath: Library\Artifacts\b3\b354c471aab9f64c2b718e02586e4a6c
+  - path: Library\Artifacts\05\056e6fc6781ea7cc5d5d2591db8d5c63
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\05\056e6fc6781ea7cc5d5d2591db8d5c63
+    projectPath: Library\Artifacts\05\056e6fc6781ea7cc5d5d2591db8d5c63
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\b3\b3eaf8b0440fecdfc90b1198f11666a0
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b3\b3eaf8b0440fecdfc90b1198f11666a0
-    projectPath: Library\Artifacts\b3\b3eaf8b0440fecdfc90b1198f11666a0
+  - path: Library\Artifacts\07\0707dd0b1341bbfd0a8473c94e319a37
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\07\0707dd0b1341bbfd0a8473c94e319a37
+    projectPath: Library\Artifacts\07\0707dd0b1341bbfd0a8473c94e319a37
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\b5\b5ce5c55762887ba4fb9c349f1e7ff35
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b5\b5ce5c55762887ba4fb9c349f1e7ff35
-    projectPath: Library\Artifacts\b5\b5ce5c55762887ba4fb9c349f1e7ff35
+  - path: Library\Artifacts\13\13bed147c635740a0b5528bb2623e21b
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\13\13bed147c635740a0b5528bb2623e21b
+    projectPath: Library\Artifacts\13\13bed147c635740a0b5528bb2623e21b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\b6\b61d7b2367064495c6aa3877d0b78a32
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b6\b61d7b2367064495c6aa3877d0b78a32
-    projectPath: Library\Artifacts\b6\b61d7b2367064495c6aa3877d0b78a32
+  - path: Library\Artifacts\1d\1d48440b4cfea71f3fe014c865e011d2
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\1d\1d48440b4cfea71f3fe014c865e011d2
+    projectPath: Library\Artifacts\1d\1d48440b4cfea71f3fe014c865e011d2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\21\21764e03ef26cec7bc4de4810f99b1e8
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\21\21764e03ef26cec7bc4de4810f99b1e8
+    projectPath: Library\Artifacts\21\21764e03ef26cec7bc4de4810f99b1e8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\29\293fbb781423c817ac436c3df2f38f37
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\29\293fbb781423c817ac436c3df2f38f37
+    projectPath: Library\Artifacts\29\293fbb781423c817ac436c3df2f38f37
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\2a\2a04038ce3f84192d7bc107755a369e9
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2a\2a04038ce3f84192d7bc107755a369e9
+    projectPath: Library\Artifacts\2a\2a04038ce3f84192d7bc107755a369e9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\2c\2c08153ba8db5009bb9ee6804fb2abc0
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2c\2c08153ba8db5009bb9ee6804fb2abc0
+    projectPath: Library\Artifacts\2c\2c08153ba8db5009bb9ee6804fb2abc0
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\2c\2c1b12ca3a776ba3d8551bfda5521c0f
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2c\2c1b12ca3a776ba3d8551bfda5521c0f
+    projectPath: Library\Artifacts\2c\2c1b12ca3a776ba3d8551bfda5521c0f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\2c\2cd0aaaa4295462e81095ac4902f5e67
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2c\2cd0aaaa4295462e81095ac4902f5e67
+    projectPath: Library\Artifacts\2c\2cd0aaaa4295462e81095ac4902f5e67
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\3d\3dc1f518a2245cf3e1bdb1ad44d81659
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\3d\3dc1f518a2245cf3e1bdb1ad44d81659
+    projectPath: Library\Artifacts\3d\3dc1f518a2245cf3e1bdb1ad44d81659
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\46\462e0c7aac3df957ae7f7a72ae16266f
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\46\462e0c7aac3df957ae7f7a72ae16266f
+    projectPath: Library\Artifacts\46\462e0c7aac3df957ae7f7a72ae16266f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4a\4a1bb79b3fab40e96911b17685c31d87
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\4a\4a1bb79b3fab40e96911b17685c31d87
+    projectPath: Library\Artifacts\4a\4a1bb79b3fab40e96911b17685c31d87
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4d\4d4e0362cd6ebc23a827b72a075abcde
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\4d\4d4e0362cd6ebc23a827b72a075abcde
+    projectPath: Library\Artifacts\4d\4d4e0362cd6ebc23a827b72a075abcde
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\4e\4e1bb7ad97308e76e490690b9ad2c138
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\4e\4e1bb7ad97308e76e490690b9ad2c138
+    projectPath: Library\Artifacts\4e\4e1bb7ad97308e76e490690b9ad2c138
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\52\5299fd4f1aa4c7ce13df76272fa89351
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\52\5299fd4f1aa4c7ce13df76272fa89351
+    projectPath: Library\Artifacts\52\5299fd4f1aa4c7ce13df76272fa89351
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\56\569be35ebc64ba544584bd74464839a8
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\56\569be35ebc64ba544584bd74464839a8
+    projectPath: Library\Artifacts\56\569be35ebc64ba544584bd74464839a8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5c\5c4f3068c70d3d4a4d665887cc9216ff
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\5c\5c4f3068c70d3d4a4d665887cc9216ff
+    projectPath: Library\Artifacts\5c\5c4f3068c70d3d4a4d665887cc9216ff
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5d\5d99f578721e0b2c20eb7522ddde6af4
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\5d\5d99f578721e0b2c20eb7522ddde6af4
+    projectPath: Library\Artifacts\5d\5d99f578721e0b2c20eb7522ddde6af4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\5e\5ef5f1d119f8818d781a2465416564f3
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\5e\5ef5f1d119f8818d781a2465416564f3
+    projectPath: Library\Artifacts\5e\5ef5f1d119f8818d781a2465416564f3
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\60\608f50e1f5d023fe373da6071e9a7ea9
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\60\608f50e1f5d023fe373da6071e9a7ea9
+    projectPath: Library\Artifacts\60\608f50e1f5d023fe373da6071e9a7ea9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\61\6192ed6a62ce955e7739b82a1cc6dd74
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\61\6192ed6a62ce955e7739b82a1cc6dd74
+    projectPath: Library\Artifacts\61\6192ed6a62ce955e7739b82a1cc6dd74
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\69\69c36046b464c860eb7686bbb45159a1
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\69\69c36046b464c860eb7686bbb45159a1
+    projectPath: Library\Artifacts\69\69c36046b464c860eb7686bbb45159a1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6a\6ad89580af274c89d6d0c08b1760b346
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6a\6ad89580af274c89d6d0c08b1760b346
+    projectPath: Library\Artifacts\6a\6ad89580af274c89d6d0c08b1760b346
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6b\6bb30b30b8ec1d08144c60113b7ce3cb
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6b\6bb30b30b8ec1d08144c60113b7ce3cb
+    projectPath: Library\Artifacts\6b\6bb30b30b8ec1d08144c60113b7ce3cb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6f\6f6f7273f78a2ea554948abbd4e9d4de
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6f\6f6f7273f78a2ea554948abbd4e9d4de
+    projectPath: Library\Artifacts\6f\6f6f7273f78a2ea554948abbd4e9d4de
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\6f\6fdd065e17aa845c7e04db28756f4836
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6f\6fdd065e17aa845c7e04db28756f4836
+    projectPath: Library\Artifacts\6f\6fdd065e17aa845c7e04db28756f4836
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\71\713e681970ac891a8cc793edd0ef00f9
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\71\713e681970ac891a8cc793edd0ef00f9
+    projectPath: Library\Artifacts\71\713e681970ac891a8cc793edd0ef00f9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\73\7341784064212b07296be29dfbd1a60d
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\73\7341784064212b07296be29dfbd1a60d
+    projectPath: Library\Artifacts\73\7341784064212b07296be29dfbd1a60d
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\77\777638477a578818510dd8889a52600c
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\77\777638477a578818510dd8889a52600c
+    projectPath: Library\Artifacts\77\777638477a578818510dd8889a52600c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\79\794bb47a6d89b23872a1f44d93d97332
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\79\794bb47a6d89b23872a1f44d93d97332
+    projectPath: Library\Artifacts\79\794bb47a6d89b23872a1f44d93d97332
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\7a\7afa09dcc2b63a1c0f296fe3926fff5c
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\7a\7afa09dcc2b63a1c0f296fe3926fff5c
+    projectPath: Library\Artifacts\7a\7afa09dcc2b63a1c0f296fe3926fff5c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\b6\b6dc113389653403fd46917d22b9e360
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b6\b6dc113389653403fd46917d22b9e360
-    projectPath: Library\Artifacts\b6\b6dc113389653403fd46917d22b9e360
+  - path: Library\Artifacts\81\8100a1f7128bbfd73ea43a745e802950
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\81\8100a1f7128bbfd73ea43a745e802950
+    projectPath: Library\Artifacts\81\8100a1f7128bbfd73ea43a745e802950
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\99\99350ab72325916cd8c14c1042b4d6d9
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\99\99350ab72325916cd8c14c1042b4d6d9
+    projectPath: Library\Artifacts\99\99350ab72325916cd8c14c1042b4d6d9
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\a5\a5db9a1c1ed32f878bb4ec88e0f1edf1
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\a5\a5db9a1c1ed32f878bb4ec88e0f1edf1
+    projectPath: Library\Artifacts\a5\a5db9a1c1ed32f878bb4ec88e0f1edf1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\a6\a62ae13b9481d6121c81239dcb3ac1eb
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\a6\a62ae13b9481d6121c81239dcb3ac1eb
+    projectPath: Library\Artifacts\a6\a62ae13b9481d6121c81239dcb3ac1eb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\ad\adb8358e6fc88fc4c32c2c03647503c7
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\ad\adb8358e6fc88fc4c32c2c03647503c7
+    projectPath: Library\Artifacts\ad\adb8358e6fc88fc4c32c2c03647503c7
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\af\af1a0c350c40db6ed7bc7a667857497c
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\af\af1a0c350c40db6ed7bc7a667857497c
+    projectPath: Library\Artifacts\af\af1a0c350c40db6ed7bc7a667857497c
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b3\b3ba6bef554d8b0cbbb7b804164ab9c8
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\b3\b3ba6bef554d8b0cbbb7b804164ab9c8
+    projectPath: Library\Artifacts\b3\b3ba6bef554d8b0cbbb7b804164ab9c8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\b7\b74daed8eda3c7c3fac1f05129e33512
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\b7\b74daed8eda3c7c3fac1f05129e33512
+    projectPath: Library\Artifacts\b7\b74daed8eda3c7c3fac1f05129e33512
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\bb\bb015432135a31bf58278c3ef6e579b8
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\bb\bb015432135a31bf58278c3ef6e579b8
+    projectPath: Library\Artifacts\bb\bb015432135a31bf58278c3ef6e579b8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\c3\c3d7fccfa25c6435741a61d4b341b197
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\c3\c3d7fccfa25c6435741a61d4b341b197
+    projectPath: Library\Artifacts\c3\c3d7fccfa25c6435741a61d4b341b197
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\b9\b96a938aafcbad5bf217501799c8d2be
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\b9\b96a938aafcbad5bf217501799c8d2be
-    projectPath: Library\Artifacts\b9\b96a938aafcbad5bf217501799c8d2be
+  - path: Library\Artifacts\cc\cc3b85b9a65601652450ac9b88733fde
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\cc\cc3b85b9a65601652450ac9b88733fde
+    projectPath: Library\Artifacts\cc\cc3b85b9a65601652450ac9b88733fde
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\be\bebd3234492a5ffd148b9effcd8f0c3d
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\be\bebd3234492a5ffd148b9effcd8f0c3d
-    projectPath: Library\Artifacts\be\bebd3234492a5ffd148b9effcd8f0c3d
+  - path: Library\Artifacts\d7\d788780298ed9e34bda9f80f1d326d65
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\d7\d788780298ed9e34bda9f80f1d326d65
+    projectPath: Library\Artifacts\d7\d788780298ed9e34bda9f80f1d326d65
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\d8\d88117f88c51c465f63a467b0a3482df
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\d8\d88117f88c51c465f63a467b0a3482df
+    projectPath: Library\Artifacts\d8\d88117f88c51c465f63a467b0a3482df
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\d8\d8c90f2821662f72989926704e31c7b6
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\d8\d8c90f2821662f72989926704e31c7b6
+    projectPath: Library\Artifacts\d8\d8c90f2821662f72989926704e31c7b6
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\dc\dca53298a1d54f216e834082fed5e436
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\dc\dca53298a1d54f216e834082fed5e436
+    projectPath: Library\Artifacts\dc\dca53298a1d54f216e834082fed5e436
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\be\bee886cecc0bc0b8cbb2acbf1b31fca8
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\be\bee886cecc0bc0b8cbb2acbf1b31fca8
-    projectPath: Library\Artifacts\be\bee886cecc0bc0b8cbb2acbf1b31fca8
+  - path: Library\Artifacts\dd\dd1f4c763fcdee7798017f3bcbd181df
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\dd\dd1f4c763fcdee7798017f3bcbd181df
+    projectPath: Library\Artifacts\dd\dd1f4c763fcdee7798017f3bcbd181df
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\dd\dd9a485aba7d3978f535eba8ee841dfe
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\dd\dd9a485aba7d3978f535eba8ee841dfe
+    projectPath: Library\Artifacts\dd\dd9a485aba7d3978f535eba8ee841dfe
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\e9\e9ac5c20611747739a31a606626d1b73
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\e9\e9ac5c20611747739a31a606626d1b73
+    projectPath: Library\Artifacts\e9\e9ac5c20611747739a31a606626d1b73
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\Artifacts\bf\bfd5f8fabfcf567c3c6f3a3cd06e4e89
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\bf\bfd5f8fabfcf567c3c6f3a3cd06e4e89
-    projectPath: Library\Artifacts\bf\bfd5f8fabfcf567c3c6f3a3cd06e4e89
+  - path: Library\Artifacts\ee\eee21c2a898ed3fc5922ecffc22e82b0
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\ee\eee21c2a898ed3fc5922ecffc22e82b0
+    projectPath: Library\Artifacts\ee\eee21c2a898ed3fc5922ecffc22e82b0
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\bf\bfeb771dfe524c829791f7dae5b6a2cc
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\bf\bfeb771dfe524c829791f7dae5b6a2cc
-    projectPath: Library\Artifacts\bf\bfeb771dfe524c829791f7dae5b6a2cc
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\fd\fd1a854df1876f88b864dabf674e6468
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\fd\fd1a854df1876f88b864dabf674e6468
+    projectPath: Library\Artifacts\fd\fd1a854df1876f88b864dabf674e6468
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\c0\c0c7c0355d7a6c4cccc023206579909f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\c0\c0c7c0355d7a6c4cccc023206579909f
-    projectPath: Library\Artifacts\c0\c0c7c0355d7a6c4cccc023206579909f
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\fe\fe4ccdee1006c859971208c5c8524556
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\fe\fe4ccdee1006c859971208c5c8524556
+    projectPath: Library\Artifacts\fe\fe4ccdee1006c859971208c5c8524556
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\c3\c3e3407d85015516831cd37915df56b0
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\c3\c3e3407d85015516831cd37915df56b0
-    projectPath: Library\Artifacts\c3\c3e3407d85015516831cd37915df56b0
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: Library\Artifacts\fe\fe8d0e9215fc3b819fd434216eeb85ec
+    fullPath: C:\Users\lixia\Emergent\Library\Artifacts\fe\fe8d0e9215fc3b819fd434216eeb85ec
+    projectPath: Library\Artifacts\fe\fe8d0e9215fc3b819fd434216eeb85ec
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\c4\c49841651411d77847a41063feb7c3b2
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\c4\c49841651411d77847a41063feb7c3b2
-    projectPath: Library\Artifacts\c4\c49841651411d77847a41063feb7c3b2
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\c4\c4d0ca2967126a651e6770825746aa62
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\c4\c4d0ca2967126a651e6770825746aa62
-    projectPath: Library\Artifacts\c4\c4d0ca2967126a651e6770825746aa62
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\cc\ccc4563dc3818386cc5018c39c012ab1
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\cc\ccc4563dc3818386cc5018c39c012ab1
-    projectPath: Library\Artifacts\cc\ccc4563dc3818386cc5018c39c012ab1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\ce\cecc3eafa8925338b7d11b8d3d9b22f9
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\ce\cecc3eafa8925338b7d11b8d3d9b22f9
-    projectPath: Library\Artifacts\ce\cecc3eafa8925338b7d11b8d3d9b22f9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\d6\d66811b7993f4e09dd2309c02682f817
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\d6\d66811b7993f4e09dd2309c02682f817
-    projectPath: Library\Artifacts\d6\d66811b7993f4e09dd2309c02682f817
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\d9\d93d9db571353942fbc9c26a66c4b584
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\d9\d93d9db571353942fbc9c26a66c4b584
-    projectPath: Library\Artifacts\d9\d93d9db571353942fbc9c26a66c4b584
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\dd\dd5030d015216b49b95c5f2dd5e2d9f0
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\dd\dd5030d015216b49b95c5f2dd5e2d9f0
-    projectPath: Library\Artifacts\dd\dd5030d015216b49b95c5f2dd5e2d9f0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\e4\e4fa0555fa9a1f0b4cc67138625837b1
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\e4\e4fa0555fa9a1f0b4cc67138625837b1
-    projectPath: Library\Artifacts\e4\e4fa0555fa9a1f0b4cc67138625837b1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\e5\e5cdc138e7b6de0827e00bd86388b146
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\e5\e5cdc138e7b6de0827e00bd86388b146
-    projectPath: Library\Artifacts\e5\e5cdc138e7b6de0827e00bd86388b146
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\e6\e6e692165a69f489771c6f2faaf3d4df
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\e6\e6e692165a69f489771c6f2faaf3d4df
-    projectPath: Library\Artifacts\e6\e6e692165a69f489771c6f2faaf3d4df
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\e8\e806c3c2e5c0f30b409cea148957b9b9
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\e8\e806c3c2e5c0f30b409cea148957b9b9
-    projectPath: Library\Artifacts\e8\e806c3c2e5c0f30b409cea148957b9b9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\e8\e80fdcf0cb6d20f2aed53bf66d8cc396
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\e8\e80fdcf0cb6d20f2aed53bf66d8cc396
-    projectPath: Library\Artifacts\e8\e80fdcf0cb6d20f2aed53bf66d8cc396
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\eb\eb2bcbf37cd46863f5acfc83ffbfbd1d
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\eb\eb2bcbf37cd46863f5acfc83ffbfbd1d
-    projectPath: Library\Artifacts\eb\eb2bcbf37cd46863f5acfc83ffbfbd1d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\ee\ee1d10cb8e1883b6bca527d0f065ec1f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\ee\ee1d10cb8e1883b6bca527d0f065ec1f
-    projectPath: Library\Artifacts\ee\ee1d10cb8e1883b6bca527d0f065ec1f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\ee\ee5cc895eaa30e3a819b1370df6cb265
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\ee\ee5cc895eaa30e3a819b1370df6cb265
-    projectPath: Library\Artifacts\ee\ee5cc895eaa30e3a819b1370df6cb265
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\ef\efaaaa8aa18b015ffcd33516a8642ff4
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\ef\efaaaa8aa18b015ffcd33516a8642ff4
-    projectPath: Library\Artifacts\ef\efaaaa8aa18b015ffcd33516a8642ff4
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\fc\fc6f1aaec271336e2a39277f2c66b61a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\fc\fc6f1aaec271336e2a39277f2c66b61a
-    projectPath: Library\Artifacts\fc\fc6f1aaec271336e2a39277f2c66b61a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\Artifacts\fd\fd8c1d36c89dcab7620fdab22537fc14
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\Artifacts\fd\fd8c1d36c89dcab7620fdab22537fc14
-    projectPath: Library\Artifacts\fd\fd8c1d36c89dcab7620fdab22537fc14
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: Library\EditorInstance.json
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\EditorInstance.json
+    fullPath: C:\Users\lixia\Emergent\Library\EditorInstance.json
     projectPath: Library\EditorInstance.json
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
   - path: Library\gfu\cache\gituser.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\gituser.yaml
+    fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gituser.yaml
     projectPath: Library\gfu\cache\gituser.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\lixia\Emergent\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\lixia\Emergent\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\ShaderCache\3\33f1f623a8bc8d2be5661227138b9a2d.bin
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ShaderCache\3\33f1f623a8bc8d2be5661227138b9a2d.bin
-    projectPath: Library\ShaderCache\3\33f1f623a8bc8d2be5661227138b9a2d.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\ShaderCache\4\4608c8ee3760b1a7294789a18df48cae.bin
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ShaderCache\4\4608c8ee3760b1a7294789a18df48cae.bin
-    projectPath: Library\ShaderCache\4\4608c8ee3760b1a7294789a18df48cae.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\ShaderCache\b\bd21420b684ef04a0388533dfc1c06f3.bin
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ShaderCache\b\bd21420b684ef04a0388533dfc1c06f3.bin
-    projectPath: Library\ShaderCache\b\bd21420b684ef04a0388533dfc1c06f3.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\ShaderCache\c\c538fc37b7cc0bae09831a8f725e5580.bin
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ShaderCache\c\c538fc37b7cc0bae09831a8f725e5580.bin
-    projectPath: Library\ShaderCache\c\c538fc37b7cc0bae09831a8f725e5580.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\ShaderCache\e\e7c8a5b34c15cbaeb59ced966e88c059.bin
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ShaderCache\e\e7c8a5b34c15cbaeb59ced966e88c059.bin
-    projectPath: Library\ShaderCache\e\e7c8a5b34c15cbaeb59ced966e88c059.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Library\ShaderCache\f\f9a2aa00c5f7648f16615c87e80fdb04.bin
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\ShaderCache\f\f9a2aa00c5f7648f16615c87e80fdb04.bin
-    projectPath: Library\ShaderCache\f\f9a2aa00c5f7648f16615c87e80fdb04.bin
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\shadercompiler-UnityShaderCompiler.exe1.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe1.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\shadercompiler-UnityShaderCompiler.exe10.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe10.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe10.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe10.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\shadercompiler-UnityShaderCompiler.exe11.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe11.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe11.log
+  - path: Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\shadercompiler-UnityShaderCompiler.exe12.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe12.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe12.log
+  - path: Library\shadercompiler-UnityShaderCompiler.exe3.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe3.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe3.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe4.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe4.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe4.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe5.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe5.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe6.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe6.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe6.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\shadercompiler-UnityShaderCompiler.exe7.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe7.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe7.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe7.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\shadercompiler-UnityShaderCompiler.exe8.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe8.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe8.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe8.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\shadercompiler-UnityShaderCompiler.exe9.log
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\shadercompiler-UnityShaderCompiler.exe9.log
+    fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe9.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe9.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: Library\SourceAssetDB
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\SourceAssetDB
+    fullPath: C:\Users\lixia\Emergent\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\Hierarchy\38bde7-20e17e8f1df05af429.json
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\StateCache\Hierarchy\38bde7-20e17e8f1df05af429.json
-    projectPath: Library\StateCache\Hierarchy\38bde7-20e17e8f1df05af429.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\StateCache\Hierarchy\38bde7-d38d980aa3d6f9e4fb.json
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\StateCache\Hierarchy\38bde7-d38d980aa3d6f9e4fb.json
-    projectPath: Library\StateCache\Hierarchy\38bde7-d38d980aa3d6f9e4fb.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\StateCache\Hierarchy\38bde7-mainStage.json
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\StateCache\Hierarchy\38bde7-mainStage.json
+    fullPath: C:\Users\lixia\Emergent\Library\StateCache\Hierarchy\38bde7-mainStage.json
     projectPath: Library\StateCache\Hierarchy\38bde7-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\SceneView\094f14-mainStage.json
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Library\StateCache\SceneView\094f14-mainStage.json
-    projectPath: Library\StateCache\SceneView\094f14-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\lixia\Emergent\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\lixia\Emergent\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ProjectSettings\DynamicsManager.asset
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\ProjectSettings\DynamicsManager.asset
-    projectPath: ProjectSettings\DynamicsManager.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Temp\__Backupscenes\0.backup
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\__Backupscenes\0.backup
+    fullPath: C:\Users\lixia\Emergent\Temp\__Backupscenes\0.backup
     projectPath: Temp\__Backupscenes\0.backup
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: Temp\UnityLockfile
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityLockfile
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityLockfile
     projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-030ddc6668516f34b8fb95055a08f761
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-030ddc6668516f34b8fb95055a08f761
-    projectPath: Temp\UnityTempFile-030ddc6668516f34b8fb95055a08f761
+  - path: Temp\UnityTempFile-3d17e22f35054574f90fbe0e6f35a244
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-3d17e22f35054574f90fbe0e6f35a244
+    projectPath: Temp\UnityTempFile-3d17e22f35054574f90fbe0e6f35a244
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-04747094e0b9e59418f2a5ada4b81e2c
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-04747094e0b9e59418f2a5ada4b81e2c
-    projectPath: Temp\UnityTempFile-04747094e0b9e59418f2a5ada4b81e2c
+  - path: Temp\UnityTempFile-45d346fbb61b3ea4799ffba0986b4db4
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-45d346fbb61b3ea4799ffba0986b4db4
+    projectPath: Temp\UnityTempFile-45d346fbb61b3ea4799ffba0986b4db4
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-05dc08bb99060a44c810158df339d684
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-05dc08bb99060a44c810158df339d684
-    projectPath: Temp\UnityTempFile-05dc08bb99060a44c810158df339d684
+  - path: Temp\UnityTempFile-6b974417fa72ce6489280394facc4968
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-6b974417fa72ce6489280394facc4968
+    projectPath: Temp\UnityTempFile-6b974417fa72ce6489280394facc4968
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-0622ebcd15e738f42b42da8c052cac2b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-0622ebcd15e738f42b42da8c052cac2b
-    projectPath: Temp\UnityTempFile-0622ebcd15e738f42b42da8c052cac2b
+  - path: Temp\UnityTempFile-70c20a03955f2cb47bdd73b0ae2cbf85
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-70c20a03955f2cb47bdd73b0ae2cbf85
+    projectPath: Temp\UnityTempFile-70c20a03955f2cb47bdd73b0ae2cbf85
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-09cf6723af04b134db4963ebcf31f3d3
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-09cf6723af04b134db4963ebcf31f3d3
-    projectPath: Temp\UnityTempFile-09cf6723af04b134db4963ebcf31f3d3
+  - path: Temp\UnityTempFile-bcae3a1f1d294b84ab3e371f3bb88012
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-bcae3a1f1d294b84ab3e371f3bb88012
+    projectPath: Temp\UnityTempFile-bcae3a1f1d294b84ab3e371f3bb88012
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-10fe9c65fa6cdfb42875547217f7994e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-10fe9c65fa6cdfb42875547217f7994e
-    projectPath: Temp\UnityTempFile-10fe9c65fa6cdfb42875547217f7994e
+  - path: Temp\UnityTempFile-c8bcb59e4272213418a9e207b0af6a19
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-c8bcb59e4272213418a9e207b0af6a19
+    projectPath: Temp\UnityTempFile-c8bcb59e4272213418a9e207b0af6a19
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: Temp\UnityTempFile-1749b0dcd37cec944b156df8b766c2e4
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-1749b0dcd37cec944b156df8b766c2e4
-    projectPath: Temp\UnityTempFile-1749b0dcd37cec944b156df8b766c2e4
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-17dacabb07e51e74899f0e0d3226f29b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-17dacabb07e51e74899f0e0d3226f29b
-    projectPath: Temp\UnityTempFile-17dacabb07e51e74899f0e0d3226f29b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-18fa29d55c5edba44b1cbd1ddc877f88
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-18fa29d55c5edba44b1cbd1ddc877f88
-    projectPath: Temp\UnityTempFile-18fa29d55c5edba44b1cbd1ddc877f88
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-196363049cef5924ba3e5f1bd9bcba64
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-196363049cef5924ba3e5f1bd9bcba64
-    projectPath: Temp\UnityTempFile-196363049cef5924ba3e5f1bd9bcba64
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-1a667a34c99de1a498d6652790043db3
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-1a667a34c99de1a498d6652790043db3
-    projectPath: Temp\UnityTempFile-1a667a34c99de1a498d6652790043db3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-1abc8b583fa073347a611867effdd4ab
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-1abc8b583fa073347a611867effdd4ab
-    projectPath: Temp\UnityTempFile-1abc8b583fa073347a611867effdd4ab
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-1c4af80dc03eb5d49876731d6ea406be
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-1c4af80dc03eb5d49876731d6ea406be
-    projectPath: Temp\UnityTempFile-1c4af80dc03eb5d49876731d6ea406be
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-275c468130ca1db4fae6031466e36fb1
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-275c468130ca1db4fae6031466e36fb1
-    projectPath: Temp\UnityTempFile-275c468130ca1db4fae6031466e36fb1
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-27ce61b7125065b4091cccc3c9764ad6
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-27ce61b7125065b4091cccc3c9764ad6
-    projectPath: Temp\UnityTempFile-27ce61b7125065b4091cccc3c9764ad6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-3005aa8f3cfe3dc47b972bae9c5cd62a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-3005aa8f3cfe3dc47b972bae9c5cd62a
-    projectPath: Temp\UnityTempFile-3005aa8f3cfe3dc47b972bae9c5cd62a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-327d816e1f6580f4b87833777178d93b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-327d816e1f6580f4b87833777178d93b
-    projectPath: Temp\UnityTempFile-327d816e1f6580f4b87833777178d93b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-3e85c863839a8914fbae4d5f39f83121
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-3e85c863839a8914fbae4d5f39f83121
-    projectPath: Temp\UnityTempFile-3e85c863839a8914fbae4d5f39f83121
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-4a98ce4ab2662d841accbe5a88f16333
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-4a98ce4ab2662d841accbe5a88f16333
-    projectPath: Temp\UnityTempFile-4a98ce4ab2662d841accbe5a88f16333
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-4d6f4f83ce7ec824fa35b493908c0ec7
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-4d6f4f83ce7ec824fa35b493908c0ec7
-    projectPath: Temp\UnityTempFile-4d6f4f83ce7ec824fa35b493908c0ec7
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-4f2ff9e4bd46b1b45894b037ab6959da
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-4f2ff9e4bd46b1b45894b037ab6959da
-    projectPath: Temp\UnityTempFile-4f2ff9e4bd46b1b45894b037ab6959da
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-54832c111c45cc6408dfbdbf51423e35
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-54832c111c45cc6408dfbdbf51423e35
-    projectPath: Temp\UnityTempFile-54832c111c45cc6408dfbdbf51423e35
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-582c30d9eafb77d489a0ca6df6b0851e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-582c30d9eafb77d489a0ca6df6b0851e
-    projectPath: Temp\UnityTempFile-582c30d9eafb77d489a0ca6df6b0851e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-5c435918eaeaec2439df19b562d0faf0
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-5c435918eaeaec2439df19b562d0faf0
-    projectPath: Temp\UnityTempFile-5c435918eaeaec2439df19b562d0faf0
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-5f46e7e84010f0b4bb013513687c61a5
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-5f46e7e84010f0b4bb013513687c61a5
-    projectPath: Temp\UnityTempFile-5f46e7e84010f0b4bb013513687c61a5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-613c9d27ad1103f488360f5da210af4f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-613c9d27ad1103f488360f5da210af4f
-    projectPath: Temp\UnityTempFile-613c9d27ad1103f488360f5da210af4f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-6179dff8441e784408bd1e903e700e6a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-6179dff8441e784408bd1e903e700e6a
-    projectPath: Temp\UnityTempFile-6179dff8441e784408bd1e903e700e6a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-6846730cf61e2cd499f8f8179a52588f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-6846730cf61e2cd499f8f8179a52588f
-    projectPath: Temp\UnityTempFile-6846730cf61e2cd499f8f8179a52588f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-68924ee5229809849a78485a7a4f44aa
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-68924ee5229809849a78485a7a4f44aa
-    projectPath: Temp\UnityTempFile-68924ee5229809849a78485a7a4f44aa
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-6b18c9f26c9c9814d8e45765a436fd8e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-6b18c9f26c9c9814d8e45765a436fd8e
-    projectPath: Temp\UnityTempFile-6b18c9f26c9c9814d8e45765a436fd8e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-6ba4590f9b93981498ac22fcd8811eb6
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-6ba4590f9b93981498ac22fcd8811eb6
-    projectPath: Temp\UnityTempFile-6ba4590f9b93981498ac22fcd8811eb6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-6d518c1361175714689ccb86016aefac
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-6d518c1361175714689ccb86016aefac
-    projectPath: Temp\UnityTempFile-6d518c1361175714689ccb86016aefac
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-701cbb7713fea2141b2fd6a39198aa45
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-701cbb7713fea2141b2fd6a39198aa45
-    projectPath: Temp\UnityTempFile-701cbb7713fea2141b2fd6a39198aa45
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-70c3c868d220a464dbb418a00e849950
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-70c3c868d220a464dbb418a00e849950
-    projectPath: Temp\UnityTempFile-70c3c868d220a464dbb418a00e849950
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-7653548fac0dc1840a842e464470f621
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-7653548fac0dc1840a842e464470f621
-    projectPath: Temp\UnityTempFile-7653548fac0dc1840a842e464470f621
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-766b392523ea5d7448589ed3e33920a7
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-766b392523ea5d7448589ed3e33920a7
-    projectPath: Temp\UnityTempFile-766b392523ea5d7448589ed3e33920a7
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-769047b26dc88724fa845ffe0339311c
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-769047b26dc88724fa845ffe0339311c
-    projectPath: Temp\UnityTempFile-769047b26dc88724fa845ffe0339311c
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-83dd56c099f59704cb2413312d7273a9
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-83dd56c099f59704cb2413312d7273a9
-    projectPath: Temp\UnityTempFile-83dd56c099f59704cb2413312d7273a9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-86630287efe696c4a8c36ca8ca77dffd
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-86630287efe696c4a8c36ca8ca77dffd
-    projectPath: Temp\UnityTempFile-86630287efe696c4a8c36ca8ca77dffd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-87716c88c4b4fc14fb78f989676de30b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-87716c88c4b4fc14fb78f989676de30b
-    projectPath: Temp\UnityTempFile-87716c88c4b4fc14fb78f989676de30b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-89d3140e5b36a55489e1e33c7ef3b64e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-89d3140e5b36a55489e1e33c7ef3b64e
-    projectPath: Temp\UnityTempFile-89d3140e5b36a55489e1e33c7ef3b64e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-8be3ee040862bf542af555cb9625e4f8
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-8be3ee040862bf542af555cb9625e4f8
-    projectPath: Temp\UnityTempFile-8be3ee040862bf542af555cb9625e4f8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-95a20f8a06458884f95e250a2deb54eb
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-95a20f8a06458884f95e250a2deb54eb
-    projectPath: Temp\UnityTempFile-95a20f8a06458884f95e250a2deb54eb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-9ada3c1bc2dacd542addcad23bb3b6bf
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-9ada3c1bc2dacd542addcad23bb3b6bf
-    projectPath: Temp\UnityTempFile-9ada3c1bc2dacd542addcad23bb3b6bf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-9ed963bee6bbeb2409c62cf7db0ef556
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-9ed963bee6bbeb2409c62cf7db0ef556
-    projectPath: Temp\UnityTempFile-9ed963bee6bbeb2409c62cf7db0ef556
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-9f32e82966e2f6e49a75106cc28ff619
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-9f32e82966e2f6e49a75106cc28ff619
-    projectPath: Temp\UnityTempFile-9f32e82966e2f6e49a75106cc28ff619
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-9f71a0730a57a674bb97b6304b53b89e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-9f71a0730a57a674bb97b6304b53b89e
-    projectPath: Temp\UnityTempFile-9f71a0730a57a674bb97b6304b53b89e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-a673c5c4994689a41a1a463ad4e0607f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-a673c5c4994689a41a1a463ad4e0607f
-    projectPath: Temp\UnityTempFile-a673c5c4994689a41a1a463ad4e0607f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-a7b9a1c54643f6749ad41ab7334fbc99
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-a7b9a1c54643f6749ad41ab7334fbc99
-    projectPath: Temp\UnityTempFile-a7b9a1c54643f6749ad41ab7334fbc99
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-a7d6b60d7c1fe474dbb8deedc2f9f9a9
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-a7d6b60d7c1fe474dbb8deedc2f9f9a9
-    projectPath: Temp\UnityTempFile-a7d6b60d7c1fe474dbb8deedc2f9f9a9
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-aa476dfe62498144381ce4a8a02bca86
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-aa476dfe62498144381ce4a8a02bca86
-    projectPath: Temp\UnityTempFile-aa476dfe62498144381ce4a8a02bca86
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-aba9729e5ed5ac342b0883a1c6fc2d40
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-aba9729e5ed5ac342b0883a1c6fc2d40
-    projectPath: Temp\UnityTempFile-aba9729e5ed5ac342b0883a1c6fc2d40
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-abb2689f04859024282d3e0e2b11a516
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-abb2689f04859024282d3e0e2b11a516
-    projectPath: Temp\UnityTempFile-abb2689f04859024282d3e0e2b11a516
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-ac514fed0ec7d7542801c6dd1a1c9b56
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-ac514fed0ec7d7542801c6dd1a1c9b56
-    projectPath: Temp\UnityTempFile-ac514fed0ec7d7542801c6dd1a1c9b56
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-adf4e763400321a4badb740b71e25ea7
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-adf4e763400321a4badb740b71e25ea7
-    projectPath: Temp\UnityTempFile-adf4e763400321a4badb740b71e25ea7
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-ae81c7b5d3393bd41b9889ffcf36538c
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-ae81c7b5d3393bd41b9889ffcf36538c
-    projectPath: Temp\UnityTempFile-ae81c7b5d3393bd41b9889ffcf36538c
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-c080dbcb4c9f44c4292e42579e8f9044
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-c080dbcb4c9f44c4292e42579e8f9044
-    projectPath: Temp\UnityTempFile-c080dbcb4c9f44c4292e42579e8f9044
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-c39a497f0c6d84c4dad2b595adb926bf
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-c39a497f0c6d84c4dad2b595adb926bf
-    projectPath: Temp\UnityTempFile-c39a497f0c6d84c4dad2b595adb926bf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-c6392ebaf7d754d448ecf6ba5bb6107d
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-c6392ebaf7d754d448ecf6ba5bb6107d
-    projectPath: Temp\UnityTempFile-c6392ebaf7d754d448ecf6ba5bb6107d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-ca5d81c5844be0d4f8646806ac0d197e
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-ca5d81c5844be0d4f8646806ac0d197e
-    projectPath: Temp\UnityTempFile-ca5d81c5844be0d4f8646806ac0d197e
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-cb5104fd026c80b4ea687226464879f6
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-cb5104fd026c80b4ea687226464879f6
-    projectPath: Temp\UnityTempFile-cb5104fd026c80b4ea687226464879f6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-cb8c67178bfb5324e91afb5dad7acb13
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-cb8c67178bfb5324e91afb5dad7acb13
-    projectPath: Temp\UnityTempFile-cb8c67178bfb5324e91afb5dad7acb13
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-d6aafbff304c4f7438b4114bdc4b4bd4
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-d6aafbff304c4f7438b4114bdc4b4bd4
-    projectPath: Temp\UnityTempFile-d6aafbff304c4f7438b4114bdc4b4bd4
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-d8125fea95bc47244974f641463a5efd
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-d8125fea95bc47244974f641463a5efd
-    projectPath: Temp\UnityTempFile-d8125fea95bc47244974f641463a5efd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-d991c9abc412d714dade5c3a117a800a
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-d991c9abc412d714dade5c3a117a800a
-    projectPath: Temp\UnityTempFile-d991c9abc412d714dade5c3a117a800a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-de267afc3e5145744ad6a1db4ca81f97
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-de267afc3e5145744ad6a1db4ca81f97
-    projectPath: Temp\UnityTempFile-de267afc3e5145744ad6a1db4ca81f97
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-de64c156d133bad4c86b351fbceed01f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-de64c156d133bad4c86b351fbceed01f
-    projectPath: Temp\UnityTempFile-de64c156d133bad4c86b351fbceed01f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-e041391b39fda4b4ba7b816094705a8b
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-e041391b39fda4b4ba7b816094705a8b
-    projectPath: Temp\UnityTempFile-e041391b39fda4b4ba7b816094705a8b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-e10c4b2d57889444fac4351b2b26c309
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-e10c4b2d57889444fac4351b2b26c309
-    projectPath: Temp\UnityTempFile-e10c4b2d57889444fac4351b2b26c309
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-e1c928eae90e06440b4dbeace2e6185f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-e1c928eae90e06440b4dbeace2e6185f
-    projectPath: Temp\UnityTempFile-e1c928eae90e06440b4dbeace2e6185f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-eedbd6fcca2a4e24a9f39d0a8fdb2f1f
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-eedbd6fcca2a4e24a9f39d0a8fdb2f1f
-    projectPath: Temp\UnityTempFile-eedbd6fcca2a4e24a9f39d0a8fdb2f1f
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-ef97a72c3636a614caeabc178fabeb32
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-ef97a72c3636a614caeabc178fabeb32
-    projectPath: Temp\UnityTempFile-ef97a72c3636a614caeabc178fabeb32
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-efd1a9f043a6b51409db29fa304950fe
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-efd1a9f043a6b51409db29fa304950fe
-    projectPath: Temp\UnityTempFile-efd1a9f043a6b51409db29fa304950fe
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-f37a351d4dc1a0f44a11afbda260b5f5
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-f37a351d4dc1a0f44a11afbda260b5f5
-    projectPath: Temp\UnityTempFile-f37a351d4dc1a0f44a11afbda260b5f5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Temp\UnityTempFile-f6f767bd672684b4aa6487229bdab359
-    fullPath: C:\Users\Untitledaep\Documents\Unity Projects\Emergent_Unity\Temp\UnityTempFile-f6f767bd672684b4aa6487229bdab359
-    projectPath: Temp\UnityTempFile-f6f767bd672684b4aa6487229bdab359
+  - path: Temp\UnityTempFile-ed400055f61b63d428e890ad572ee79c
+    fullPath: C:\Users\lixia\Emergent\Temp\UnityTempFile-ed400055f61b63d428e890ad572ee79c
+    projectPath: Temp\UnityTempFile-ed400055f61b63d428e890ad572ee79c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1

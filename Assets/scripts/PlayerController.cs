@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody m_Rigidbody;
     private Collider m_Collider;
 
+    public Vector3 m_Velocity;
+
     Quaternion m_Rotation;
     public float RotationSpeed;
     public float MovementSpeed;
@@ -73,7 +75,7 @@ public class PlayerController : MonoBehaviour
 
         //Debug.Log(IsWalking);
 
-        Vector3 m_Velocity = new Vector3(HorizontalMovement, 0, VerticalMovement);
+        m_Velocity = new Vector3(HorizontalMovement, 0, VerticalMovement);
         m_Velocity.Normalize();
         if (GetContext(Context.InAir))
         {

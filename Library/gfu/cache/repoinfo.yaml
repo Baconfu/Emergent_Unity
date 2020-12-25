@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-12-24T23:00:05.965+13:00
-  initializedAtString: 2020-12-24T19:55:17.806+13:00
+  lastUpdatedAtString: 2020-12-25T18:52:56.230+13:00
+  initializedAtString: 2020-12-25T18:52:56.230+13:00
   currentGitRemote:
     name: origin
     url: https://github.com/Baconfu/Emergent_Unity.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: new1
+    tracking: 
   currentConfigBranch:
-    name: master
+    name: new1
     remote:
-      name: origin
-      url: https://github.com/Baconfu/Emergent_Unity.git
-    trackingBranch: master
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/Baconfu/Emergent_Unity.git
