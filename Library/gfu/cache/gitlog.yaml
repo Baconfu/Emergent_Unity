@@ -13,9 +13,429 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-12-25T19:09:06.703+13:00
+  lastUpdatedAtString: 2020-12-25T19:23:29.871+13:00
   initializedAtString: 2020-12-25T18:52:56.624+13:00
   log:
+  - commitID: dd53c1d3a4ce8486f74ff92c88bc6d2e2f4e0733
+    mergeA: 
+    mergeB: 
+    authorName: Baconfu
+    authorEmail: lixiaochuan02@gmail.com
+    commitEmail: lixiaochuan02@gmail.com
+    commitName: Baconfu
+    summary: refined debug menu
+    description: 
+    timeString: 2020-12-25T19:12:00.000+13:00
+    commitTimeString: 2020-12-25T19:12:00.000+13:00
+    changes:
+    - path: Assembly-CSharp-Editor-firstpass.csproj
+      fullPath: C:\Users\lixia\Emergent\Assembly-CSharp-Editor-firstpass.csproj
+      projectPath: Assembly-CSharp-Editor-firstpass.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\lixia\Emergent\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\scripts\Debug\DebugTextScript.cs
+      fullPath: C:\Users\lixia\Emergent\Assets\scripts\Debug\DebugTextScript.cs
+      projectPath: Assets\scripts\Debug\DebugTextScript.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\scripts\PlayerController.cs
+      fullPath: C:\Users\lixia\Emergent\Assets\scripts\PlayerController.cs
+      projectPath: Assets\scripts\PlayerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Emergent.sln
+      fullPath: C:\Users\lixia\Emergent\Emergent.sln
+      projectPath: Emergent.sln
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ArtifactDB
+      fullPath: C:\Users\lixia\Emergent\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\Artifacts\02\0201f89d2bd40d940204d1b27cf38e27
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\02\0201f89d2bd40d940204d1b27cf38e27
+      projectPath: Library\Artifacts\02\0201f89d2bd40d940204d1b27cf38e27
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\1d\1d48440b4cfea71f3fe014c865e011d2
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\1d\1d48440b4cfea71f3fe014c865e011d2
+      projectPath: Library\Artifacts\1d\1d48440b4cfea71f3fe014c865e011d2
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\21\21764e03ef26cec7bc4de4810f99b1e8
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\21\21764e03ef26cec7bc4de4810f99b1e8
+      projectPath: Library\Artifacts\21\21764e03ef26cec7bc4de4810f99b1e8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\29\293fbb781423c817ac436c3df2f38f37
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\29\293fbb781423c817ac436c3df2f38f37
+      projectPath: Library\Artifacts\29\293fbb781423c817ac436c3df2f38f37
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\2a\2a04038ce3f84192d7bc107755a369e9
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2a\2a04038ce3f84192d7bc107755a369e9
+      projectPath: Library\Artifacts\2a\2a04038ce3f84192d7bc107755a369e9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\2c\2c08153ba8db5009bb9ee6804fb2abc0
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2c\2c08153ba8db5009bb9ee6804fb2abc0
+      projectPath: Library\Artifacts\2c\2c08153ba8db5009bb9ee6804fb2abc0
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\2c\2c1b12ca3a776ba3d8551bfda5521c0f
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2c\2c1b12ca3a776ba3d8551bfda5521c0f
+      projectPath: Library\Artifacts\2c\2c1b12ca3a776ba3d8551bfda5521c0f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\2c\2cd0aaaa4295462e81095ac4902f5e67
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\2c\2cd0aaaa4295462e81095ac4902f5e67
+      projectPath: Library\Artifacts\2c\2cd0aaaa4295462e81095ac4902f5e67
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\3d\3dc1f518a2245cf3e1bdb1ad44d81659
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\3d\3dc1f518a2245cf3e1bdb1ad44d81659
+      projectPath: Library\Artifacts\3d\3dc1f518a2245cf3e1bdb1ad44d81659
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\46\462e0c7aac3df957ae7f7a72ae16266f
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\46\462e0c7aac3df957ae7f7a72ae16266f
+      projectPath: Library\Artifacts\46\462e0c7aac3df957ae7f7a72ae16266f
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\4a\4a1bb79b3fab40e96911b17685c31d87
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\4a\4a1bb79b3fab40e96911b17685c31d87
+      projectPath: Library\Artifacts\4a\4a1bb79b3fab40e96911b17685c31d87
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\4d\4d4e0362cd6ebc23a827b72a075abcde
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\4d\4d4e0362cd6ebc23a827b72a075abcde
+      projectPath: Library\Artifacts\4d\4d4e0362cd6ebc23a827b72a075abcde
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\4e\4e1bb7ad97308e76e490690b9ad2c138
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\4e\4e1bb7ad97308e76e490690b9ad2c138
+      projectPath: Library\Artifacts\4e\4e1bb7ad97308e76e490690b9ad2c138
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\52\5299fd4f1aa4c7ce13df76272fa89351
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\52\5299fd4f1aa4c7ce13df76272fa89351
+      projectPath: Library\Artifacts\52\5299fd4f1aa4c7ce13df76272fa89351
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\56\569be35ebc64ba544584bd74464839a8
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\56\569be35ebc64ba544584bd74464839a8
+      projectPath: Library\Artifacts\56\569be35ebc64ba544584bd74464839a8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\5c\5c4f3068c70d3d4a4d665887cc9216ff
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\5c\5c4f3068c70d3d4a4d665887cc9216ff
+      projectPath: Library\Artifacts\5c\5c4f3068c70d3d4a4d665887cc9216ff
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\5d\5d99f578721e0b2c20eb7522ddde6af4
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\5d\5d99f578721e0b2c20eb7522ddde6af4
+      projectPath: Library\Artifacts\5d\5d99f578721e0b2c20eb7522ddde6af4
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\5e\5ef5f1d119f8818d781a2465416564f3
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\5e\5ef5f1d119f8818d781a2465416564f3
+      projectPath: Library\Artifacts\5e\5ef5f1d119f8818d781a2465416564f3
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\60\608f50e1f5d023fe373da6071e9a7ea9
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\60\608f50e1f5d023fe373da6071e9a7ea9
+      projectPath: Library\Artifacts\60\608f50e1f5d023fe373da6071e9a7ea9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\61\6192ed6a62ce955e7739b82a1cc6dd74
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\61\6192ed6a62ce955e7739b82a1cc6dd74
+      projectPath: Library\Artifacts\61\6192ed6a62ce955e7739b82a1cc6dd74
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\69\69c36046b464c860eb7686bbb45159a1
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\69\69c36046b464c860eb7686bbb45159a1
+      projectPath: Library\Artifacts\69\69c36046b464c860eb7686bbb45159a1
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\6a\6ad89580af274c89d6d0c08b1760b346
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6a\6ad89580af274c89d6d0c08b1760b346
+      projectPath: Library\Artifacts\6a\6ad89580af274c89d6d0c08b1760b346
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\6b\6bb30b30b8ec1d08144c60113b7ce3cb
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6b\6bb30b30b8ec1d08144c60113b7ce3cb
+      projectPath: Library\Artifacts\6b\6bb30b30b8ec1d08144c60113b7ce3cb
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\6f\6f6f7273f78a2ea554948abbd4e9d4de
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6f\6f6f7273f78a2ea554948abbd4e9d4de
+      projectPath: Library\Artifacts\6f\6f6f7273f78a2ea554948abbd4e9d4de
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\6f\6fdd065e17aa845c7e04db28756f4836
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\6f\6fdd065e17aa845c7e04db28756f4836
+      projectPath: Library\Artifacts\6f\6fdd065e17aa845c7e04db28756f4836
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\71\713e681970ac891a8cc793edd0ef00f9
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\71\713e681970ac891a8cc793edd0ef00f9
+      projectPath: Library\Artifacts\71\713e681970ac891a8cc793edd0ef00f9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\73\7341784064212b07296be29dfbd1a60d
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\73\7341784064212b07296be29dfbd1a60d
+      projectPath: Library\Artifacts\73\7341784064212b07296be29dfbd1a60d
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\77\777638477a578818510dd8889a52600c
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\77\777638477a578818510dd8889a52600c
+      projectPath: Library\Artifacts\77\777638477a578818510dd8889a52600c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\79\794bb47a6d89b23872a1f44d93d97332
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\79\794bb47a6d89b23872a1f44d93d97332
+      projectPath: Library\Artifacts\79\794bb47a6d89b23872a1f44d93d97332
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\81\8100a1f7128bbfd73ea43a745e802950
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\81\8100a1f7128bbfd73ea43a745e802950
+      projectPath: Library\Artifacts\81\8100a1f7128bbfd73ea43a745e802950
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\99\99350ab72325916cd8c14c1042b4d6d9
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\99\99350ab72325916cd8c14c1042b4d6d9
+      projectPath: Library\Artifacts\99\99350ab72325916cd8c14c1042b4d6d9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\a5\a5db9a1c1ed32f878bb4ec88e0f1edf1
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\a5\a5db9a1c1ed32f878bb4ec88e0f1edf1
+      projectPath: Library\Artifacts\a5\a5db9a1c1ed32f878bb4ec88e0f1edf1
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\a6\a62ae13b9481d6121c81239dcb3ac1eb
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\a6\a62ae13b9481d6121c81239dcb3ac1eb
+      projectPath: Library\Artifacts\a6\a62ae13b9481d6121c81239dcb3ac1eb
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\ad\adb8358e6fc88fc4c32c2c03647503c7
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\ad\adb8358e6fc88fc4c32c2c03647503c7
+      projectPath: Library\Artifacts\ad\adb8358e6fc88fc4c32c2c03647503c7
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\af\af1a0c350c40db6ed7bc7a667857497c
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\af\af1a0c350c40db6ed7bc7a667857497c
+      projectPath: Library\Artifacts\af\af1a0c350c40db6ed7bc7a667857497c
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\b3\b3ba6bef554d8b0cbbb7b804164ab9c8
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\b3\b3ba6bef554d8b0cbbb7b804164ab9c8
+      projectPath: Library\Artifacts\b3\b3ba6bef554d8b0cbbb7b804164ab9c8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\b7\b74daed8eda3c7c3fac1f05129e33512
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\b7\b74daed8eda3c7c3fac1f05129e33512
+      projectPath: Library\Artifacts\b7\b74daed8eda3c7c3fac1f05129e33512
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\bb\bb015432135a31bf58278c3ef6e579b8
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\bb\bb015432135a31bf58278c3ef6e579b8
+      projectPath: Library\Artifacts\bb\bb015432135a31bf58278c3ef6e579b8
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\d7\d788780298ed9e34bda9f80f1d326d65
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\d7\d788780298ed9e34bda9f80f1d326d65
+      projectPath: Library\Artifacts\d7\d788780298ed9e34bda9f80f1d326d65
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\d8\d88117f88c51c465f63a467b0a3482df
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\d8\d88117f88c51c465f63a467b0a3482df
+      projectPath: Library\Artifacts\d8\d88117f88c51c465f63a467b0a3482df
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\d8\d8c90f2821662f72989926704e31c7b6
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\d8\d8c90f2821662f72989926704e31c7b6
+      projectPath: Library\Artifacts\d8\d8c90f2821662f72989926704e31c7b6
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\dd\dd1f4c763fcdee7798017f3bcbd181df
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\dd\dd1f4c763fcdee7798017f3bcbd181df
+      projectPath: Library\Artifacts\dd\dd1f4c763fcdee7798017f3bcbd181df
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\dd\dd9a485aba7d3978f535eba8ee841dfe
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\dd\dd9a485aba7d3978f535eba8ee841dfe
+      projectPath: Library\Artifacts\dd\dd9a485aba7d3978f535eba8ee841dfe
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\ee\eee21c2a898ed3fc5922ecffc22e82b0
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\ee\eee21c2a898ed3fc5922ecffc22e82b0
+      projectPath: Library\Artifacts\ee\eee21c2a898ed3fc5922ecffc22e82b0
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\fd\fd1a854df1876f88b864dabf674e6468
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\fd\fd1a854df1876f88b864dabf674e6468
+      projectPath: Library\Artifacts\fd\fd1a854df1876f88b864dabf674e6468
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\fe\fe4ccdee1006c859971208c5c8524556
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\fe\fe4ccdee1006c859971208c5c8524556
+      projectPath: Library\Artifacts\fe\fe4ccdee1006c859971208c5c8524556
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\Artifacts\fe\fe8d0e9215fc3b819fd434216eeb85ec
+      fullPath: C:\Users\lixia\Emergent\Library\Artifacts\fe\fe8d0e9215fc3b819fd434216eeb85ec
+      projectPath: Library\Artifacts\fe\fe8d0e9215fc3b819fd434216eeb85ec
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\lixia\Emergent\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\lixia\Emergent\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\SourceAssetDB
+      fullPath: C:\Users\lixia\Emergent\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\38bde7-mainStage.json
+      fullPath: C:\Users\lixia\Emergent\Library\StateCache\Hierarchy\38bde7-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\38bde7-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gituser.yaml
+      fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\lixia\Emergent\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe10.log
+      fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe10.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe10.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe5.log
+      fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe5.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe5.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe9.log
+      fullPath: C:\Users\lixia\Emergent\Library\shadercompiler-UnityShaderCompiler.exe9.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe9.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      fullPath: C:\Users\lixia\Emergent\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: C:\Users\lixia\Emergent\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 168878091c7f7a3c307c3e773ac2b1851774d847
     mergeA: 
     mergeB: 

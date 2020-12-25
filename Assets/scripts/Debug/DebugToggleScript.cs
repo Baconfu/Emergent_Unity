@@ -40,6 +40,9 @@ public class DebugToggleScript : MonoBehaviour
             Debug.Log("trying to change list in menu controler");
             debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(5,m_Toggle.isOn);
         }
+        if (type == 7){
+            debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(7,m_Toggle.isOn);
+        }
     }
 
     
