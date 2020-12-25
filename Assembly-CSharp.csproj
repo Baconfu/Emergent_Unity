@@ -59,10 +59,12 @@
      <Compile Include="Assets\Constants.cs" />
      <Compile Include="Assets\EngineScript.cs" />
      <Compile Include="Assets\File.cs" />
+     <Compile Include="Assets\GenerateTerrain.cs" />
      <Compile Include="Assets\JsonArrayParser.cs" />
      <Compile Include="Assets\UnitSpaceInfo.cs" />
      <Compile Include="Assets\UnitSpaceScript.cs" />
      <Compile Include="Assets\WorldScript.cs" />
+     <None Include="Assets\terrain.shader" />
  <Reference Include="UnityEngine">
  <HintPath>/home/chuan/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
