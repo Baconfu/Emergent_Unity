@@ -33,14 +33,23 @@ public class DebugToggleScript : MonoBehaviour
 
     void ToggleValueChanged(Toggle change)
     {
-        if (type == 0){
+        if (type == 0)
+        {
             debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(0,m_Toggle.isOn);
         }
-        if (type == 5){
-            Debug.Log("trying to change list in menu controler");
+
+        if (type == 2)
+        {
+            debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(2, m_Toggle.isOn);
+        }
+
+        if (type == 5)
+        {
             debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(5,m_Toggle.isOn);
         }
-        if (type == 7){
+
+        if (type == 7)
+        {
             debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(7,m_Toggle.isOn);
         }
     }

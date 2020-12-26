@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 212904795393186209}
   - component: {fileID: 3588700448447308408}
   m_Layer: 0
-  m_Name: WireCube
+  m_Name: WireCubeWhite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundSource: 0
-  interactive: 1
-  lineMaterial: {fileID: 0}
+  interactive: 0
+  lineMaterial: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
   wire_renderer: 0
   wireColor: {r: 1, g: 1, b: 1, a: 0.74}
   line_renderer: 1
@@ -185,7 +185,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -400,7 +400,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -615,7 +615,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -830,7 +830,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -1045,7 +1045,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -1260,7 +1260,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -1475,7 +1475,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -1690,7 +1690,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -1905,7 +1905,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -2120,7 +2120,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -2335,7 +2335,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
@@ -2550,7 +2550,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d32f2329b689fe6489bbf4e276881cf3, type: 2}
     - target: {fileID: 1649233525578474146, guid: af75a81bbd49eeb4caaa718e740affc7,
         type: 3}
       propertyPath: m_Parameters.numCapVertices

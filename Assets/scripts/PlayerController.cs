@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody m_Rigidbody;
-    private Collider m_Collider;
+    public Collider m_Collider;
+
+    public Collider inAirCollider;
 
     public Vector3 m_Velocity;
 
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour
         Vector3 initialPosition = new Vector3(0f, 2f, 0f);
 
         m_Rigidbody = GetComponent<Rigidbody>();
-        m_Collider = GetComponent<Collider>();
+        //m_Collider = GetComponent<Collider>();
 
         transform.SetPositionAndRotation(initialPosition, initialRotation);
         m_Rotation = initialRotation;
@@ -76,28 +78,48 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(IsWalking);
 
         m_Velocity = new Vector3(HorizontalMovement, 0, VerticalMovement);
-        m_Velocity.Normalize();
-        if (GetContext(Context.InAir))
-        {
-            m_Velocity = m_Velocity * 0.5f;
-        }
+        
+        
 
         //Rotating the direction of movement according to camera orientation
         float CameraYDirectionRadian = GameObject.Find("Camera").transform.rotation.eulerAngles[1];
         m_Velocity = Quaternion.AngleAxis(CameraYDirectionRadian, Vector3.up) * m_Velocity;
 
-        if (Mathf.Approximately(Input.GetAxis("Jump"), 1) && GetContext(Context.InAir)==false && !GetContext(Context.JumpDisabled))
+        m_Velocity.Normalize();
+
+
+        Vector3 temp = m_Velocity * MovementSpeed * Time.fixedDeltaTime * 10;
+        m_Rigidbody.velocity = new Vector3(temp[0], m_Rigidbody.velocity[1], temp[2]);
+
+        if (Mathf.Approximately(Input.GetAxis("Jump"), 1) && GetContext(Context.InAir)==false && GetContext(Context.JumpDisabled)==false)
         {
-            m_Rigidbody.AddForce(new Vector3(0, JumpHeight * 4, 0),ForceMode.Impulse);
+            m_Rigidbody.AddForce(new Vector3(0, JumpHeight * 10, 0),ForceMode.Impulse);
             SetContext(Context.InAir, true);
             SetContext(Context.JumpDisabled, true);
             StartCoroutine("JumpDisabler");
+            Debug.Log("Jump");
         }
 
+        //else { m_Rigidbody.velocity = new Vector3 (m_Rigidbody.velocity[0], 0, m_Rigidbody.velocity[2]); }
+
+        if (!GetContext(Context.InAir))
+        {
+            m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity[0], 0, m_Rigidbody.velocity[2]);
+        }
+
+        if (GetContext(Context.InAir))
+        {
+            m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity[0] * 0.5f, m_Rigidbody.velocity[1], m_Rigidbody.velocity[2] * 0.5f);
+        }
+
+
+        //m_Rigidbody.MovePosition(m_Rigidbody.position + (m_Velocity * Time.deltaTime * MovementSpeed / 10));
+
+        //float velocityClamp = 8;
+        //if (Mathf.Abs(m_Rigidbody.velocity[0]) > velocityClamp) { m_Rigidbody.velocity = new Vector3(velocityClamp, m_Rigidbody.velocity[1], m_Rigidbody.velocity[2]); }
+        //if (Mathf.Abs(m_Rigidbody.velocity[2]) > velocityClamp) { m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity[0], m_Rigidbody.velocity[1], velocityClamp); }
+
         m_Rotation = Quaternion.Euler(transform.forward);
-
-
-        m_Rigidbody.MovePosition(m_Rigidbody.position + m_Velocity * Time.deltaTime * MovementSpeed / 10);
         m_Rigidbody.MoveRotation(Quaternion.RotateTowards(m_Rotation, Quaternion.Euler(m_Velocity), RotationSpeed * Time.deltaTime));
 
         

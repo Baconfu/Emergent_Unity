@@ -64,12 +64,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CameraZoom.cs" />
     <Compile Include="Assets\bbox\DimBoxes\BoundBox\BoundBox.cs" />
     <Compile Include="Assets\bbox\DimBoxes\BoundBox\BoundBoxExample.cs" />
     <Compile Include="Assets\bbox\DimBoxes\BoundBox\DrawLines.cs" />
     <Compile Include="Assets\bbox\DimBoxes\TestDynamicBehaviour.cs" />
     <Compile Include="Assets\bbox\DimBoxes\maxCamera.cs" />
-    <Compile Include="Assets\scripts\CameraController.cs" />
     <Compile Include="Assets\scripts\ChunkScript.cs" />
     <Compile Include="Assets\scripts\Constants.cs" />
     <Compile Include="Assets\scripts\Debug\DebugMenuController.cs" />

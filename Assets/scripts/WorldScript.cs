@@ -8,7 +8,7 @@ public class WorldScript : MonoBehaviour
 {
 
     private GameObject[] spaces = new GameObject[5];
-    public GameObject wireframeCube;
+    
     
 
     // Start is called before the first frame update
@@ -25,23 +25,18 @@ public class WorldScript : MonoBehaviour
 
         UnityEngine.Object.Instantiate(Resources.Load("Ladder"), new Vector3(0,1,0), Quaternion.identity);
 
-        Camera.onPostRender += OnPostRenderCallback;
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("DebugText").GetComponent<DebugTextScript>().getDebugDisplayStatus(DebugTextScript.debugCategory.MouseInfo))
-        {
-            Vector3 offset = new Vector3(0.5f, 0.5f, 0.5f);
-            UnityEngine.Object.Instantiate(wireframeCube, EmptyUnitSpaceOnCursor() + offset, Quaternion.identity);
-
-        }
+        
 
     }
 
-    static Vector3 EmptyUnitSpaceOnCursor()
+    public static Vector3 EmptyUnitSpaceOnCursor()
     {
         //this one only works on terrain blocks, NOT ON ENTITIES
         RaycastHit hit;
@@ -88,11 +83,7 @@ public class WorldScript : MonoBehaviour
         return Vector3.zero;
     }
 
-    void OnPostRenderCallback(Camera cam)
-    {
-        Destroy(GameObject.Find("WireCube"));
-        Destroy(GameObject.Find("WireCube(Clone)"));
-    }
+
 
 
     void loadChunk()
