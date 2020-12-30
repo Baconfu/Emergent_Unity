@@ -34,23 +34,28 @@ public class BuildingGenerator : MonoBehaviour
 
         //sets overall box collider of building
         output.GetComponent<BoxCollider>().size = new Vector3(building.x, building.y, building.z);
+        output.AddComponent<Entity>();
         Debug.Log(output.GetComponent<BoxCollider>().size);
 
         //generates walls on 4 directions
-        //NB: the default rotation of wall is "inside to the top".
+        //NB: the default rotation of wall is "inside to the positive z direction".
         GameObject wall0 = new GameObject("Wall0");
+        wall0.transform.SetParent(output.transform);
         for (int x = 0; x<building.x; x++)
         {
             for (int y = 0; y < building.y; y++)
             {
                 //Debug.Log(wallContainer);
-                GameObject newWall = Instantiate(wallContainer, new Vector3(x + 0.5f, y, 0), Quaternion.Euler(0, 0, 0));
-                
-                newWall.transform.SetParent(wall0.transform);
+                GameObject newWall = Instantiate(wallContainer, wall0.transform);
+                newWall.transform.position = new Vector3(x + 0.5f, y, 0);
+                newWall.transform.rotation = Quaternion.Euler(0, 0, 0);
+                //newWall.transform.SetParent(wall0.transform);
+
+                //newWall.GetComponent<Wall>().Attach();
             }
             
         }
-        wall0.transform.SetParent(output.transform);
+        
         wall0.transform.position = new Vector3((float)-building.x / 2, (float)-building.y / 2, (float)-building.z / 2);
 
         Debug.Log("generated building" + new Vector3(building.x, building.y, building.z));

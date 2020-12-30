@@ -34,7 +34,7 @@ public class EntityPlacement : MonoBehaviour
         //i.e. when the player can successfully choose what entity to place down
 
         world = GameObject.FindGameObjectWithTag("World");
-        buildingGenerator = world.GetComponent<BuildingGenerator>();
+        buildingGenerator = GameObject.FindGameObjectWithTag("World").GetComponent<BuildingGenerator>();
 
     }
 
@@ -64,7 +64,7 @@ public class EntityPlacement : MonoBehaviour
                 //this is what happens when you ENTER placing mode
                 placing = true;
                 yValue = Mathf.Round(cursorHitPoint[1]);
-                proposedEntity = GameObject.FindGameObjectWithTag("World").GetComponent<BuildingGenerator>().Generate(System.IO.File.ReadAllText(Application.dataPath + "/buildings/LivingQuarter.json"));
+                proposedEntity = buildingGenerator.Generate(System.IO.File.ReadAllText(Application.dataPath + "/buildings/LivingQuarter.json"));
                 proposedEntity = GameObject.Find(proposedEntity.name);
                 //ignore raycast layer (number 2)
                 proposedEntity.layer = 2;
@@ -101,7 +101,7 @@ public class EntityPlacement : MonoBehaviour
 
             if (World.KeyPressed(KeyCode.Mouse0))
             {
-
+                GameObject newObject = Instantiate(proposedEntity, GetProposedPositionFromCursor(proposedEntity), Quaternion.Euler(0, 90 * rotation, 0));
             }
         }
     }

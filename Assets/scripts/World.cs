@@ -6,8 +6,8 @@ using System.IO;
 
 public class World : MonoBehaviour
 {
-    
-    
+
+    private Chunk c;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,9 @@ public class World : MonoBehaviour
         //Debug.Log(Application.dataPath);
 
 
-        ChunkScript c = new ChunkScript(new Vector3(0,0,0));
+        c = Resources.Load("Chunk") as Chunk;
+        Instantiate(c, new Vector3(0, 0, 0), Quaternion.identity);
+        Debug.Log(c);
         Camera.onPostRender += OnPostRenderCallback;
 
         Instantiate(Resources.Load("Ladder"), new Vector3(0,1,0), Quaternion.identity);
