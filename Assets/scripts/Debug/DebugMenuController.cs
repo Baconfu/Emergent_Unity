@@ -29,7 +29,7 @@ public class DebugMenuController : MonoBehaviour
         panelActive = panel.activeInHierarchy;
         if (!panelActive){
             if (Input.GetKeyDown(KeyCode.F3)){
-                Debug.Log("checked for f3");
+                //Debug.Log("checked for f3");
                 panel.SetActive(true);
             }
         }

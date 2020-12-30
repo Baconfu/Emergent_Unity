@@ -33,9 +33,11 @@ public class DebugToggleScript : MonoBehaviour
 
     void ToggleValueChanged(Toggle change)
     {
-        if (type == 0)
+        debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(type, m_Toggle.isOn);
+
+        /*if (type == 0)
         {
-            debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(0,m_Toggle.isOn);
+            
         }
 
         if (type == 2)
@@ -51,7 +53,7 @@ public class DebugToggleScript : MonoBehaviour
         if (type == 7)
         {
             debugText.GetComponent<DebugTextScript>().setDebugDisplayStatus(7,m_Toggle.isOn);
-        }
+        }*/
     }
 
     

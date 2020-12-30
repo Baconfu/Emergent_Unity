@@ -38,8 +38,6 @@ public class DebugTextScript : MonoBehaviour
     {
         DebugText = GetComponent<TextMeshProUGUI>();
 
-        Camera.onPostRender += OnPostRenderCallback;
-
         //cpuCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");
         //ramCounter = new PerformanceCounter("Memory", "Available MBytes");
 
@@ -51,7 +49,7 @@ public class DebugTextScript : MonoBehaviour
         
         if (getDebugDisplayStatus(debugCategory.PlayerInfo)){
             DebugText.text += "Player position: " + GameObject.Find("Player").transform.position.ToString() + "\n";   
-            DebugText.text += "Player velocity: " + (GameObject.Find("Player").GetComponent<Rigidbody>().velocity+GameObject.Find("Player").GetComponent<PlayerController>().m_Velocity).ToString() + "\n";     
+            DebugText.text += "Player velocity: " + (GameObject.Find("Player").GetComponent<Rigidbody>().velocity+GameObject.Find("Player").GetComponent<Player>().m_Velocity).ToString() + "\n";     
         }
 
 
@@ -68,9 +66,9 @@ public class DebugTextScript : MonoBehaviour
             
             if (contextList.Count != 0) { contextList.Clear(); }
             
-            for (int i = 0; i < (int)PlayerController.Context.NumberOfContexts; i++)
+            for (int i = 0; i < (int)Player.Context.NumberOfContexts; i++)
             {
-                contextList.Add(GameObject.Find("Player").GetComponent<PlayerController>().ContextList[i].ToString());
+                contextList.Add(GameObject.Find("Player").GetComponent<Player>().ContextList[i].ToString());
                 
             }
             DebugText.text += 
@@ -87,7 +85,7 @@ public class DebugTextScript : MonoBehaviour
             DebugText.text += "Unitspace under mouse: " + hit.transform.gameObject.transform.position.ToString();
 
             Vector3 offset = new Vector3(0.5f, 0.5f, 0.5f);
-            UnityEngine.Object.Instantiate(wireframeCubePink, WorldScript.EmptyUnitSpaceOnCursor() + offset, Quaternion.identity);
+            UnityEngine.Object.Instantiate(wireframeCubePink, World.EmptyUnitSpaceOnCursor() + offset, Quaternion.identity);
             UnityEngine.Object.Instantiate(wireframeCubeWhite, hit.collider.gameObject.transform.position + offset, Quaternion.identity);
 
             if (hit.point.y < hit.transform.gameObject.transform.position.y + 1)
@@ -133,13 +131,5 @@ public class DebugTextScript : MonoBehaviour
         debugDisplayStatusList[target] = desired;
     }
 
-    void OnPostRenderCallback(Camera cam)
-    {
-        if (Application.isPlayer)
-        {
-            Destroy(GameObject.Find("WireCubeWhite(Clone)"));
-            Destroy(GameObject.Find("WireCubePink(Clone)"));
-        }
-
-    }
+    
 }

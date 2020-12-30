@@ -7,7 +7,7 @@ public class Constants
 {
     public const int chunk_width_tiles = 20;
 
-    public string data_path = Application.dataPath + "/data/chunks/";
+    public string data_path = Application.dataPath + "/data";
 
     enum spaceType: ushort {
         //space types 0-100 are non-collidable

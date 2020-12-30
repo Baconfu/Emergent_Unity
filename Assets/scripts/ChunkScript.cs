@@ -17,7 +17,7 @@ public class ChunkScript : MonoBehaviour
     {
         Constants constant = new Constants();
 
-        string path = constant.data_path + "chunk_" + ((int)v.x).ToString() + "_" + ((int)v.y).ToString() + ".json";// + "_" + ((int)v.z).ToString();
+        string path = constant.data_path + "/chunks" + "/chunk_" + ((int)v.x).ToString() + "_" + ((int)v.y).ToString() + ".json";// + "_" + ((int)v.z).ToString();
 
 
 
@@ -44,7 +44,7 @@ public class ChunkScript : MonoBehaviour
         for(int z=0; z<5; z++){
             for(int y=0; y<Constants.chunk_width_tiles; y++){
                 for(int x=0; x<Constants.chunk_width_tiles; x++){
-                    spaces[iterator] = UnityEngine.Object.Instantiate(GameObject.Find("UnitSpace"));
+                    spaces[iterator] = Instantiate(GameObject.Find("UnitSpace"));
                     spaces[iterator].transform.position = new Vector3(x,z,y);
                     spaces[iterator].transform.SetParent(GameObject.Find("UnitSpaceCollection").transform, false);
                     if(buffer[iterator].type == "terrain"){
