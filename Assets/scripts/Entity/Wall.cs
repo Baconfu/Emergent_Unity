@@ -2,38 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wall : MonoBehaviour
+public class Wall : Subentity
 {
     private float cameraYRotation;
     private float yRotation;
-    private Player player;
-
-    public Entity root;
+    
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         cameraYRotation = GameObject.FindWithTag("MainCamera").transform.rotation.eulerAngles[1];
-        player = GameObject.FindWithTag("Player").GetComponent<Player>();
-
-        root = transform.root.parent.GetComponent<Entity>();
-        Debug.Log(root);
+        
+        
     }
 
     // Update is called once per frame
-    void Update()
+    public override void Update()
     {
+        base.Update();
+        
         yRotation = transform.rotation.eulerAngles[1];
         if (player.GetContext(Player.Context.Inside))
         {
             //put wall-hiding mechanics here
             //(hide wall when the player is inside AND camera is pointing at "outside" of wall)
         }
+
+        if (root.proposed)
+        {
+            startColor = GetComponent<Renderer>().material.color;
+            GetComponent<Renderer>().material.color = Color.yellow;
+            Debug.Log("tried to change color");
+        }
         
     }
 
-    public void Attach()
-    {
-        
-    }
 }

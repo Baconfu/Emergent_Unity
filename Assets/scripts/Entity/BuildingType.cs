@@ -9,5 +9,8 @@ public class BuildingType
     public int x;
     public int y;
     public int z;
+
+    public string name;
+    public int id;
 }
 

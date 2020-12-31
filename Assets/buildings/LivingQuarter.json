@@ -1,5 +1,7 @@
 {
 	"x": 3,
 	"y": 2,
-	"z": 4
+	"z": 4,
+	"name": "LivingQuarter",
+	"id": 200
 }

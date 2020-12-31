@@ -14,12 +14,11 @@ public class EntityPlacement : MonoBehaviour
 
     float yValue;
 
-    bool placing;
-    bool delay;
 
     Ray ray;
 
     GameObject world;
+    Player player;
     BuildingGenerator buildingGenerator;
 
     void Start()
@@ -29,11 +28,13 @@ public class EntityPlacement : MonoBehaviour
         //temporary line (test entity):
 
         //proposedEntity = Resources.Load("TestEntity3_4_3");
+        proposedEntityName = "LivingQuarter";
 
         //probably remove this AFTER the inventory system is mostly complete.
         //i.e. when the player can successfully choose what entity to place down
 
-        world = GameObject.FindGameObjectWithTag("World");
+        world = GameObject.FindWithTag("World");
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
         buildingGenerator = GameObject.FindGameObjectWithTag("World").GetComponent<BuildingGenerator>();
 
     }
@@ -49,29 +50,48 @@ public class EntityPlacement : MonoBehaviour
         cursorHitPoint = hit.point;
         cursorEmptyUnitSpace = World.EmptyUnitSpaceOnCursor();
 
-        //the TAB key trigger is also temporary. change ASAP when infrastructure and overall ideas are complete;
-        if (World.KeyPressed(KeyCode.Tab))
+        if (player.GetContext(Player.Context.Placing))
         {
-            //Debug.Log("TAB");
-            if (placing)
+            Debug.Log("placing updated");
+            proposedEntity.transform.position = GetProposedPositionFromCursor(proposedEntity);
+            proposedEntity.transform.rotation = Quaternion.identity;
+            proposedEntity.transform.Rotate(transform.up, 90f * rotation);
+            //Debug.Log(GetProposedPositionFromCursor(GameObject.Find("TestEntity3_4_3(Clone)")));
+
+            if (World.KeyPressed(KeyCode.Tab))
             {
-                placing = false;
-                Destroy(GameObject.Find("LivingQuarter"));
-                
+                //exiting placing mode
+                player.SetContext(Player.Context.Placing, false);
+                Destroy(GameObject.Find(proposedEntityName + "(Proposed)"));
+                proposedEntity = null;
             }
-            else
+
+
+            if (World.KeyPressed(KeyCode.Mouse0))
             {
-                //this is what happens when you ENTER placing mode
-                placing = true;
-                yValue = Mathf.Round(cursorHitPoint[1]);
-                proposedEntity = buildingGenerator.Generate(System.IO.File.ReadAllText(Application.dataPath + "/buildings/LivingQuarter.json"));
-                proposedEntity = GameObject.Find(proposedEntity.name);
-                //ignore raycast layer (number 2)
-                proposedEntity.layer = 2;
-                proposedEntity.GetComponent<BoxCollider>().isTrigger = true;
+                Debug.Log("placed building");
+                GameObject newObject = Instantiate(proposedEntity, GetProposedPositionFromCursor(proposedEntity), Quaternion.Euler(0, 90 * rotation, 0));
+                newObject.GetComponent<Entity>().setProposed(false);
             }
-   
         }
+        else
+        {
+            if (World.KeyPressed(KeyCode.Tab))
+            {
+                //entering placing mode
+                Debug.Log("entering placing mode");
+                player.SetContext(Player.Context.Placing, true);
+                yValue = Mathf.Round(cursorHitPoint[1]);
+                proposedEntity = buildingGenerator.Generate(System.IO.File.ReadAllText(Application.dataPath + "/buildings/" + proposedEntityName + ".json"));
+                proposedEntity.GetComponent<Entity>().setProposed(true);
+                proposedEntity = GameObject.Find(proposedEntityName + "(Proposed)");
+                
+                //Debug.Log("original name:" + proposedEntity.GetComponent<Entity>().originalName);
+            }
+            
+        }
+
+
 
         if (World.KeyPressed(KeyCode.UpArrow))
         {
@@ -91,19 +111,7 @@ public class EntityPlacement : MonoBehaviour
         //Debug.Log("placing: " + placing);
 
         //this is what happens if placing mode PERSISTS through a frame
-        if (placing)
-        {
-            Debug.Log("placing updated");
-            proposedEntity.transform.position = GetProposedPositionFromCursor(proposedEntity);
-            proposedEntity.transform.rotation = Quaternion.identity;
-            proposedEntity.transform.Rotate(transform.up, 90f * rotation);
-            //Debug.Log(GetProposedPositionFromCursor(GameObject.Find("TestEntity3_4_3(Clone)")));
-
-            if (World.KeyPressed(KeyCode.Mouse0))
-            {
-                GameObject newObject = Instantiate(proposedEntity, GetProposedPositionFromCursor(proposedEntity), Quaternion.Euler(0, 90 * rotation, 0));
-            }
-        }
+        
     }
 
     Vector3 GetDimension(GameObject target)
@@ -194,10 +202,5 @@ public class EntityPlacement : MonoBehaviour
         
     }
 
-    IEnumerator Delayer()
-    {
-        yield return new WaitForSecondsRealtime(0.2f);
-        delay = true;
-    }
 
 }
