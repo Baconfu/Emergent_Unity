@@ -11,22 +11,28 @@ public class Chunk : MonoBehaviour
 {
 
     private GameObject[] spaces = new GameObject[2000];
-    private Vector3 position;
+    private Vector3Int position;
 
     // Start is called before the first frame update
     void Start()
     {
-        position = transform.position;
+        position = new Vector3Int(Mathf.RoundToInt(transform.position[0]),
+            Mathf.RoundToInt(transform.position[1]),
+            Mathf.RoundToInt(transform.position[2]));
 
         Constants constant = new Constants();
 
-        string path = constant.data_path + "/chunks" + "/chunk_" + ((int)position.x).ToString() + "_" + ((int)position.y).ToString() + ".json";// + "_" + ((int)v.z).ToString();
+        string path = constant.data_path + "/chunks" + "/chunk_" + 
+            ((int)position.x).ToString() + "_" + 
+            ((int)position.y).ToString() + 
+            ".json";
+        // + "_" + ((int)v.z).ToString();
 
         File chunkFile = new File(path);
 
         string data = chunkFile.Data();
 
-        Debug.Log(data);
+        //Debug.Log(data);
 
         JsonArrayParser parser = new JsonArrayParser(data);
 
@@ -51,16 +57,16 @@ public class Chunk : MonoBehaviour
             {
                 for (int x = 0; x < Constants.chunk_width_tiles; x++)
                 {
-                    spaces[iterator] = Instantiate(GameObject.Find("UnitSpace"));
-                    spaces[iterator].transform.position = new Vector3(x, z, y);
-                    spaces[iterator].transform.SetParent(root.transform);
+                    spaces[iterator] = Instantiate(Resources.Load("UnitSpace") as GameObject, new Vector3(x, z, y), Quaternion.identity, root.transform);
+                    spaces[iterator].name = "(" + x.ToString() + ", " + y.ToString() + ", " + z.ToString() + ")";
+
                     if (buffer[iterator].type == "terrain")
                     {
-                        spaces[iterator].GetComponent<UnitSpaceScript>().SetUnitSpaceType(UnitSpaceScript.UnitSpaceType.rock);
+                        spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.rock);
                     }
                     if (buffer[iterator].type == "air")
                     {
-                        spaces[iterator].GetComponent<UnitSpaceScript>().SetUnitSpaceType(UnitSpaceScript.UnitSpaceType.air);
+                        spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.air);
                     }
                     iterator++;
                 }

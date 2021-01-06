@@ -3,5 +3,11 @@
 	"y": 2,
 	"z": 4,
 	"name": "LivingQuarter",
-	"id": 200
+	"type": "Building",
+
+	"haveDoor": true,
+
+	"positionOfDoor": [
+		"(2,0,0)"
+	]
 }

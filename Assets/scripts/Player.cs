@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,9 @@ public class Player : MonoBehaviour
     public List<bool> ContextList;
 
     public Animator m_Animator;
+
+    public event EventHandler OnEnterInside;
+    public event EventHandler OnExitInside;
 
 
     public enum Context
@@ -57,6 +61,7 @@ public class Player : MonoBehaviour
         //GetComponent<Projector>().transform = new Vector3(0.5f, 8, 0.5f);
 
         m_Animator = transform.Find("Ethan").GetComponent<Animator>();
+        //SetContext(Context.Inside, true);
         
     }
 
@@ -144,9 +149,37 @@ public class Player : MonoBehaviour
         UpdateContext();
     }
 
-    private void OnCollisionStay(Collision collision)
+    void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out Metaentity container))
+        {
+            Debug.Log("collision entered");
+            if (container.buildingType == "Building")
+            {
+                SetContext(Context.Inside, true);
+            }
+        }
+    }
+
+    void OnCollisionStay(Collision collision)
     {
         //SetContext(Context.InAir, false);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.TryGetComponent(out Metaentity container))
+        {
+            if (container.buildingType == "Building")
+            {
+                SetContext(Context.Inside, false);
+            }
+        }
     }
 
     public bool GetContext(Context target)

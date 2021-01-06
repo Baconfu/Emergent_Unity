@@ -1,91 +1,88 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    private int hp;
+    
 
     public bool proposed;
 
     public Color startColor;
 
-    public string originalName;
+    
 
-    Player player;
+    public Player player ;
+    public GameObject worldObject;
+
+    public event EventHandler OnEnterProposed;
+    public event EventHandler OnExitProposed;
+
+
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Awake()
     {
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        worldObject = GameObject.FindWithTag("World");
+        GameObject.FindWithTag("World").GetComponent<EntityPlacement>().OnEnterPlacing += EnterPlacing;
+        GameObject.FindWithTag("World").GetComponent<EntityPlacement>().OnExitPlacing += ExitPlacing;
     }
+
+
+    private void OnDisable()
+    {
+        GameObject.FindWithTag("World").GetComponent<EntityPlacement>().OnEnterPlacing -= EnterPlacing;
+    }
+
+  
 
     // Update is called once per frame
     public virtual void Update()
     {
-        if (player.GetContext(Player.Context.Placing))
-        {
-            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
-        }
-        else
-        {
-            gameObject.layer = LayerMask.NameToLayer("Default");
-        }
+        
     }
 
-    public void setProposed(bool desiredProposed)
+    public virtual void SetProposed(bool desired)
     {
-        if (desiredProposed)
+        if (desired)
         {
             proposed = true;
-
-            //ignore raycast layer (number 2)
-            gameObject.layer = 2;
-            foreach(Transform trans in GetComponentsInChildren<Transform>())
-            {
-                trans.gameObject.layer = 2;
-            }
-
+            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
             foreach (Collider col in GetComponentsInChildren<Collider>())
             {
                 col.isTrigger = true;
             }
-
-            originalName = gameObject.name;
-            gameObject.name += "(Proposed)";
         }
-
-        if (!desiredProposed)
+        else
         {
             proposed = false;
-
-            foreach (Transform trans in GetComponentsInChildren<Transform>())
-            {
-                trans.gameObject.layer = 0;
-            }
-
+            gameObject.layer = LayerMask.NameToLayer("Default");
             foreach (Collider col in GetComponentsInChildren<Collider>())
             {
                 col.isTrigger = false;
-                Debug.Log("setted colliders");
             }
-
-            if (originalName.Length != 0)
-            {
-                gameObject.name = originalName;
-            }
-            
         }
-
-        foreach(Entity entity in GetComponentsInChildren<Entity>())
-        {
-            entity.proposed = desiredProposed;
-        }
-
     }
 
-    public void onParentSetProposed(bool desiredProposed)
+    private void EnterPlacing(object sender, EventArgs e)
     {
+        Debug.Log("EnterPlacing evnet function called");
+        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
 
+        foreach (Transform trans in GetComponentsInChildren<Transform>())
+        {
+            trans.gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        }
+    }    
+    private void ExitPlacing(object sender, EventArgs e)
+    {
+        gameObject.layer = LayerMask.NameToLayer("Default");
+        foreach (Transform trans in GetComponentsInChildren<Transform>())
+        {
+            trans.gameObject.layer = LayerMask.NameToLayer("Default");
+        }
     }
+
 }

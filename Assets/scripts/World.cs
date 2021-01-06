@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,9 @@ public class World : MonoBehaviour
 {
 
     private Chunk c;
+
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +34,10 @@ public class World : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
+        //Debug.Log("Placing:"+GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().GetContext(Player.Context.Placing));
     }
+
+
 
     public static Vector3 EmptyUnitSpaceOnCursor()
     {
@@ -42,30 +47,31 @@ public class World : MonoBehaviour
         Vector3 hitColliderPosition = hit.transform.gameObject.GetComponent<Transform>().position;
         
 
-        if(hit.transform.gameObject.GetComponent<UnitSpaceScript>().type >= 100)
+        if(hit.transform.gameObject.GetComponent<UnitSpace>().type >= 100)
         {
-            if (hit.point.y < hit.transform.gameObject.transform.position.y + 1)
+            if (hit.point.y < hit.transform.position.y + 1)
+                            //hit.transform.gameObject.transform.position
             {
 
-                if (hit.point.x == hit.transform.gameObject.transform.position.x)
+                if (hit.point.x == hit.transform.position.x)
                 {
                     //west
                     return hitColliderPosition + new Vector3(-1, 0, 0);
                 }
 
-                if (hit.point.x == hit.transform.gameObject.transform.position.x + 1)
+                if (hit.point.x == hit.transform.position.x + 1)
                 {
                     //east
                     return hitColliderPosition + new Vector3(1, 0, 0);
                 }
 
-                if (hit.point.z == hit.transform.gameObject.transform.position.z)
+                if (hit.point.z == hit.transform.position.z)
                 {
                     //south
                     return hitColliderPosition + new Vector3(0, 0, -1);
                 }
 
-                if (hit.point.z == hit.transform.gameObject.transform.position.z + 1)
+                if (hit.point.z == hit.transform.position.z + 1)
                 {
                     //north
                     return hitColliderPosition + new Vector3(0, 0, 1);

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitSpaceScript : MonoBehaviour
+public class UnitSpace : MonoBehaviour
 {
     public int type;
 
     public Collider physicsCollider;
-    public Collider detectionCollider;
+    //public Collider detectionCollider;
 
     public enum UnitSpaceType{
         air = 0,
@@ -31,10 +31,9 @@ public class UnitSpaceScript : MonoBehaviour
     {
         gameObject.layer = 0;
         if(type < 100){
-            //isTrigger, when turned on, disables physics detection
-            physicsCollider.enabled = false;
+            physicsCollider.isTrigger = true;
         }else{
-            physicsCollider.enabled = true;
+            physicsCollider.isTrigger = false;
         }
         transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
         if(type == (int)UnitSpaceType.air){

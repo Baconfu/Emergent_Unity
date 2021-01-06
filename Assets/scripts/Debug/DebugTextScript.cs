@@ -74,6 +74,7 @@ public class DebugTextScript : MonoBehaviour
             DebugText.text += 
                 "In air:" + contextList[0] + "\n" + 
                 "Jump disabled:" + contextList[1] + "\n" +
+                "Inside:" + contextList[10] + "\n" +
                 "Placing:" + contextList[100] + "\n";
 
         }

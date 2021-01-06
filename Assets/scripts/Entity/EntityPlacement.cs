@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,9 +18,12 @@ public class EntityPlacement : MonoBehaviour
 
     Ray ray;
 
-    GameObject world;
+    World world;
     Player player;
     BuildingGenerator buildingGenerator;
+
+    public event EventHandler OnEnterPlacing;
+    public event EventHandler OnExitPlacing;
 
     void Start()
     {
@@ -33,7 +37,7 @@ public class EntityPlacement : MonoBehaviour
         //probably remove this AFTER the inventory system is mostly complete.
         //i.e. when the player can successfully choose what entity to place down
 
-        world = GameObject.FindWithTag("World");
+        world = GameObject.FindWithTag("World").GetComponent<World>();
         player = GameObject.FindWithTag("Player").GetComponent<Player>();
         buildingGenerator = GameObject.FindGameObjectWithTag("World").GetComponent<BuildingGenerator>();
 
@@ -41,8 +45,6 @@ public class EntityPlacement : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log("update ");
-
         RaycastHit hit;
         ray = GameObject.Find("Camera").GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         Physics.Raycast(GameObject.Find("Camera").GetComponent<Camera>().ScreenPointToRay(Input.mousePosition), out hit);
@@ -50,68 +52,85 @@ public class EntityPlacement : MonoBehaviour
         cursorHitPoint = hit.point;
         cursorEmptyUnitSpace = World.EmptyUnitSpaceOnCursor();
 
-        if (player.GetContext(Player.Context.Placing))
+
+        if (player.GetContext(Player.Context.Placing) == true)
         {
+            //if placing mode persists from last frame...
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                //exiting placing mode
+                player.SetContext(Player.Context.Placing, false);
+                
+                Destroy(proposedEntity);
+                //Destroy(GameObject.Find(proposedEntityName + "(Proposed)"));
+                //Debug.Log(GameObject.Find(proposedEntityName + "(Proposed)"));
+                proposedEntity = null;
+                Debug.Log("object destroyed");
+                //OnExitPlacing?.Invoke(this, EventArgs.Empty);
+                return;
+            }
+
             Debug.Log("placing updated");
             proposedEntity.transform.position = GetProposedPositionFromCursor(proposedEntity);
             proposedEntity.transform.rotation = Quaternion.identity;
             proposedEntity.transform.Rotate(transform.up, 90f * rotation);
-            //Debug.Log(GetProposedPositionFromCursor(GameObject.Find("TestEntity3_4_3(Clone)")));
 
-            if (World.KeyPressed(KeyCode.Tab))
-            {
-                //exiting placing mode
-                player.SetContext(Player.Context.Placing, false);
-                Destroy(GameObject.Find(proposedEntityName + "(Proposed)"));
-                proposedEntity = null;
-            }
-
-
-            if (World.KeyPressed(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 Debug.Log("placed building");
                 GameObject newObject = Instantiate(proposedEntity, GetProposedPositionFromCursor(proposedEntity), Quaternion.Euler(0, 90 * rotation, 0));
-                newObject.GetComponent<Entity>().setProposed(false);
+                newObject.GetComponent<Metaentity>().SetProposed(false);
+                foreach (Subentity sub in newObject.GetComponentsInChildren<Subentity>())
+                {
+                    sub.SetProposed(false);
+                }
+
             }
+
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                yValue += 1;
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                yValue += -1;
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                rotation += 1;
+                if (rotation > 3) rotation = 0;
+                if (rotation < 0) rotation = 3;
+            }
+
+            return;
         }
-        else
+
+        if (player.GetContext(Player.Context.Placing) == false)
         {
-            if (World.KeyPressed(KeyCode.Tab))
+            //if the player is not placing...
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
                 //entering placing mode
                 Debug.Log("entering placing mode");
                 player.SetContext(Player.Context.Placing, true);
+                //OnEnterPlacing?.Invoke(this, EventArgs.Empty);
+
+
                 yValue = Mathf.Round(cursorHitPoint[1]);
                 proposedEntity = buildingGenerator.Generate(System.IO.File.ReadAllText(Application.dataPath + "/buildings/" + proposedEntityName + ".json"));
-                proposedEntity.GetComponent<Entity>().setProposed(true);
+                proposedEntity.GetComponent<Metaentity>().SetProposed(true);
+                foreach (Subentity sub in proposedEntity.GetComponentsInChildren<Subentity>())
+                {
+                    sub.SetProposed(true);
+                }
                 proposedEntity = GameObject.Find(proposedEntityName + "(Proposed)");
-                
+
                 //Debug.Log("original name:" + proposedEntity.GetComponent<Entity>().originalName);
             }
-            
+            return;
+
         }
 
-
-
-        if (World.KeyPressed(KeyCode.UpArrow))
-        {
-            yValue += 1;
-        }
-        if (World.KeyPressed(KeyCode.DownArrow))
-        {
-            yValue += -1;
-        }
-        if (World.KeyPressed(KeyCode.R))
-        {
-            rotation += 1;
-            if (rotation > 3) { rotation = 0; }
-            if (rotation < 0) { rotation = 3; }
-        }
-
-        //Debug.Log("placing: " + placing);
-
-        //this is what happens if placing mode PERSISTS through a frame
-        
     }
 
     Vector3 GetDimension(GameObject target)
@@ -164,9 +183,6 @@ public class EntityPlacement : MonoBehaviour
             cursorProjection = new Vector2(ray.GetPoint(enter)[0], ray.GetPoint(enter)[2]);
             //Debug.Log(cursorProjection);
         }
-        
-        //Vector2 cursorProjection = ray.GetPoint(Mathf.Abs(ray.origin[1] - yValue) / Mathf.Cos(Vector3.Angle(ray.direction, Vector3.down)));
-        
 
         Vector2 result = Vector2.zero;
 
@@ -176,10 +192,7 @@ public class EntityPlacement : MonoBehaviour
         {
             dimensionProjection = new Vector2(Mathf.Round(GetDimension(proposed)[2]), Mathf.Round(GetDimension(proposed)[0]));
         }*/
- 
 
-
-        
         for (int i=0; i<2; i++)
         {
             //if the x/y-length of the proposed entity is even... 

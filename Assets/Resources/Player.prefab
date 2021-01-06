@@ -315,13 +315,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a7a0b5f5e796344b1ff2db7b8767a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Collider: {fileID: 0}
+  m_Collider: {fileID: 5402119548711888099}
   inAirCollider: {fileID: 0}
   m_Velocity: {x: 0, y: 0, z: 0}
-  RotationSpeed: 20
-  MovementSpeed: 50
-  JumpHeight: 15
+  RotationSpeed: 50
+  MovementSpeed: 40
+  JumpHeight: 27.99
   ContextList: 
+  m_Animator: {fileID: 0}
 --- !u!114 &6313706526151140478
 MonoBehaviour:
   m_ObjectHideFlags: 0
