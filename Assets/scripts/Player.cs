@@ -158,7 +158,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent(out Metaentity container))
         {
-            Debug.Log("collision entered");
+            //Debug.Log("collision entered");
             if (container.buildingType == "Building")
             {
                 SetContext(Context.Inside, true);

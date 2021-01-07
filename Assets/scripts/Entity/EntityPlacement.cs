@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,12 +9,12 @@ public class EntityPlacement : MonoBehaviour
     Vector3 cursorHitPoint;
     Vector3 cursorEmptyUnitSpace;
 
-    GameObject proposedEntity;
-    string proposedEntityName;
+    public GameObject proposedEntity;
+    public string proposedEntityName;
 
-    int rotation = 0;
+    public int rotation = 0;
 
-    float yValue;
+    public float yValue;
 
 
     Ray ray;
@@ -28,11 +29,11 @@ public class EntityPlacement : MonoBehaviour
     void Start()
     {
         //Debug.Log(System.IO.File.ReadAllText(Application.dataPath + "/buildings/LivingQuarter.json"));
+        proposedEntity = null;
 
         //temporary line (test entity):
-
-        //proposedEntity = Resources.Load("TestEntity3_4_3");
-        proposedEntityName = "LivingQuarter";
+        //proposedEntityName = "LivingQuarter";
+        proposedEntityName = "TemperatureProbe";
 
         //probably remove this AFTER the inventory system is mostly complete.
         //i.e. when the player can successfully choose what entity to place down
@@ -72,6 +73,7 @@ public class EntityPlacement : MonoBehaviour
 
             Debug.Log("placing updated");
             proposedEntity.transform.position = GetProposedPositionFromCursor(proposedEntity);
+            Debug.Log(proposedEntity);
             proposedEntity.transform.rotation = Quaternion.identity;
             proposedEntity.transform.Rotate(transform.up, 90f * rotation);
 
@@ -117,13 +119,24 @@ public class EntityPlacement : MonoBehaviour
 
 
                 yValue = Mathf.Round(cursorHitPoint[1]);
-                proposedEntity = buildingGenerator.Generate(System.IO.File.ReadAllText(Application.dataPath + "/buildings/" + proposedEntityName + ".json"));
+                proposedEntity = buildingGenerator.Generate(System.IO.File.ReadAllText(Application.dataPath + "/Resources/Buildings/" + proposedEntityName + ".json"));
                 proposedEntity.GetComponent<Metaentity>().SetProposed(true);
+
                 foreach (Subentity sub in proposedEntity.GetComponentsInChildren<Subentity>())
                 {
                     sub.SetProposed(true);
                 }
-                proposedEntity = GameObject.Find(proposedEntityName + "(Proposed)");
+
+                
+
+                //Instantiate(proposedEntity);
+
+                //proposedEntity = GameObject.Find(proposedEntityName + "(Proposed)");
+
+                
+
+
+
 
                 //Debug.Log("original name:" + proposedEntity.GetComponent<Entity>().originalName);
             }
@@ -143,24 +156,26 @@ public class EntityPlacement : MonoBehaviour
         
         Vector3 dimension;
        
-        if (target.TryGetComponent(typeof(Collider), out Component collider))
+        
+
+        if (target.TryGetComponent(out BoxCollider box))
         {
-            dimension = target.GetComponent<Collider>().bounds.size;
-            //Debug.Log(target.GetComponent<Collider>().bounds);
+            dimension = box.bounds.size;
+            //Debug.Log(box.bounds);
             goto a;
         }
 
-        if (target.TryGetComponent(typeof(BoxCollider), out Component box))
+        if (target.TryGetComponent(out Component collider))
         {
-            dimension = target.GetComponent<BoxCollider>().bounds.size;
-            
+            dimension = target.GetComponent<Collider>().bounds.size;
+            Debug.Log(target.GetComponent<Collider>().bounds);
             goto a;
         }
 
         dimension = target.GetComponent<Mesh>().bounds.size; goto a;
     
     a:
-
+        
         return dimension;
 
 
@@ -171,7 +186,7 @@ public class EntityPlacement : MonoBehaviour
         //you HAVE TO feed this function INSTANTIATED STUFF or the dimension thing will not work
 
 
-        float enter = 0.0f;
+        float enter;
         //this is cursor position's projection on the y-value plane
         //Vector2 cursorProjection = new Vector2(cursorHitPoint[0], cursorHitPoint[2]);
         Plane yValuePlane = new Plane(Vector3.up, new Vector3(0, yValue, 0));
@@ -210,8 +225,19 @@ public class EntityPlacement : MonoBehaviour
 
         Debug.Log("dimension projection" + dimensionProjection);
         Debug.Log("rotation state" + rotation % 2);
+        Vector3 output = new Vector3(result[0], yValue + GetDimension(proposed)[1] / 2, result[1]);
 
-        return new Vector3(result[0], yValue + GetDimension(proposed)[1] / 2, result[1]);
+
+        if (proposed.TryGetComponent(out Metaentity ent))
+        {
+            if (ent.buildingType == "Item")
+            {
+                output += new Vector3(0, -GetDimension(proposedEntity)[1] / 2, 0);
+            }
+        }
+
+
+        return output;
         
     }
 

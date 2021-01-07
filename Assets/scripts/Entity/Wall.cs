@@ -29,9 +29,9 @@ public class Wall : Subentity
     {
         base.Update();
 
-        if (player.GetContext(Player.Context.Inside))
+        if (player.GetContext(Player.Context.Inside) && !player.GetContext(Player.Context.Placing))
         {
-            if (Quaternion.Angle(GameObject.FindWithTag("MainCamera").transform.rotation, transform.rotation) <= 90)
+            if (Quaternion.Angle(Quaternion.Euler(0,GameObject.FindWithTag("MainCamera").transform.rotation.eulerAngles[1],0), transform.rotation) <= 90)
             {
                 shouldBeHidden = true;
             }

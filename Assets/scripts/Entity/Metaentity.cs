@@ -31,6 +31,7 @@ public class Metaentity : Entity
 
         if (desired)
         {
+            Debug.Log("name changed");
             originalName = gameObject.name;
             gameObject.name += "(Proposed)";
         }

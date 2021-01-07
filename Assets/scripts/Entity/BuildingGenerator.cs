@@ -41,27 +41,44 @@ public class BuildingGenerator : MonoBehaviour
     public GameObject Generate(string info)
     {
         building = JsonConvert.DeserializeObject<BuildingType>(info);
-        GameObject output = new GameObject(building.name, typeof(BoxCollider));
-
-        //Debug.Log(new Vector3(building.x,building.y,building.z));
-
-        //sets overall box collider of building
-        output.GetComponent<BoxCollider>().size = new Vector3(building.x, building.y, building.z);
-        output.GetComponent<BoxCollider>().isTrigger = true;
-
-        //lets the script know the bounding box of entity
-        //also acting as a trigger to detect player's presence
-        output.AddComponent<Metaentity>();
-        output.GetComponent<Metaentity>().occupation = output.GetComponent<BoxCollider>();
-        //Debug.Log(output.GetComponent<BoxCollider>().size);
 
         
 
+
+
+
+        //Debug.Log(output.GetComponent<BoxCollider>().size);
+
+
+        if (building.type == "Item")
+        {
+
+
+            GameObject output = Instantiate((GameObject)Resources.Load(building.name));
+            output.name = building.name;
+            Debug.Log("probe generated");
+            return output;
+            
+
+        }
+
         if (building.type == "Building")
         {
+
+            GameObject output = new GameObject(building.name);
+            //sets overall box collider of building
+            output.AddComponent<BoxCollider>();
+            output.GetComponent<BoxCollider>().size = new Vector3(building.x, building.y, building.z);
+            output.GetComponent<BoxCollider>().isTrigger = true;
+
+            //lets the script know the bounding box of entity
+            //also acting as a trigger to detect player's presence
+            output.AddComponent<Metaentity>();
+            output.GetComponent<Metaentity>().occupation = output.GetComponent<BoxCollider>();
+            output.GetComponent<Metaentity>().buildingType = building.type;
+
             //generates walls on 4 directions
             //NB: the default rotation of wall is "inside to the positive z direction".
-            output.GetComponent<Metaentity>().buildingType = building.type;
 
             for (int x = 0; x < building.x; x++)
             {
@@ -124,6 +141,8 @@ public class BuildingGenerator : MonoBehaviour
         }
 
         return null;
+
+        
     }
 
     Vector3 StringToVector3(string s)
