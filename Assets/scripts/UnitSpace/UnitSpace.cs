@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,10 @@ public class UnitSpace : MonoBehaviour
 
     public Collider physicsCollider;
     //public Collider detectionCollider;
+
+    protected Player player;
+
+    Material buildingMaterial;
 
     public enum UnitSpaceType{
         air = 0,
@@ -27,6 +32,11 @@ public class UnitSpace : MonoBehaviour
     }*/
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        //buildingMaterial = GetComponent<Renderer>().material;
+    }
+
     void Start()
     {
         gameObject.layer = 0;
@@ -40,6 +50,11 @@ public class UnitSpace : MonoBehaviour
             transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
             gameObject.layer = 2;
         }
+
+        player = GameObject.FindWithTag("Player").GetComponent<Player>();
+        player.onInside += OnPlayerInside;
+        player.onOutside += OnPlayerOutside;
+
     }
 
     // Update is called once per frame
@@ -55,4 +70,25 @@ public class UnitSpace : MonoBehaviour
     public void SetUnitSpaceType(UnitSpaceType desired){
         type = (int)desired;
     }
+
+    void OnPlayerInside(object sender, EventArgs e)
+    {
+        Debug.Log("Inside!");
+    }
+    
+    void OnPlayerOutside(object sender, EventArgs e)
+    {
+
+    }
+
+    /*public void Darken(float percent)
+    {
+        percent = Mathf.Clamp01(percent);
+        buildingMaterial.color = new Color(
+            buildingMaterial.color.r * (1 - percent), 
+            buildingMaterial.color.g * (1 - percent), 
+            buildingMaterial.color.b * (1 - percent), 
+            buildingMaterial.color.a);
+    }*/
+
 }

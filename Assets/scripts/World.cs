@@ -1,14 +1,17 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.IO;
+
 
 public class World : MonoBehaviour
 {
 
-    private Chunk c;
+    
+
+    public GameObject unitSpaceCollection;
 
     
 
@@ -19,13 +22,17 @@ public class World : MonoBehaviour
 
         //Debug.Log(Application.dataPath);
 
-
-        c = Resources.Load("Chunk") as Chunk;
-        Instantiate(c, new Vector3(0, 0, 0), Quaternion.identity);
-        Debug.Log(c);
+        //Debug.Log(Resources.Load("UnitSpaceCollection"));
+ 
         Camera.onPostRender += OnPostRenderCallback;
 
-        Instantiate(Resources.Load("Ladder"), new Vector3(0,1,0), Quaternion.identity);
+        //Instantiate(Resources.Load("Ladder"), new Vector3(0,1,0), Quaternion.identity);
+        //Debug.Log(Resources.Load("UnitSpaceCollection"));
+        unitSpaceCollection = GameObject.Find("UnitSpaceCollection");
+        //unitSpaceCollection.name = "UnitSpaceCollection";
+
+        
+        
 
         
 
@@ -106,9 +113,9 @@ public class World : MonoBehaviour
         {
             //"Temp" tag means destroyed after each rendering i.e. only appearing for one frame
             GameObject[] toBeDestroyed = GameObject.FindGameObjectsWithTag("Temp");
-            for (int i=0; i < toBeDestroyed.Length; i++)
+            foreach (GameObject dest in toBeDestroyed)
             {
-                Destroy(GameObject.FindGameObjectsWithTag("Temp")[i]);
+                Destroy(dest);
             }
             //Debug.Log("tried to delete yes!!");
         }

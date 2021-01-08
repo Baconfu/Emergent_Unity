@@ -33,7 +33,7 @@ public class EntityPlacement : MonoBehaviour
 
         //temporary line (test entity):
         //proposedEntityName = "LivingQuarter";
-        proposedEntityName = "TemperatureProbe";
+        proposedEntityName = "LivingQuarter";
 
         //probably remove this AFTER the inventory system is mostly complete.
         //i.e. when the player can successfully choose what entity to place down

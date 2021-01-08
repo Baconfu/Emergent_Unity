@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
 
     public Animator m_Animator;
 
-    public event EventHandler OnEnterInside;
-    public event EventHandler OnExitInside;
+    public event EventHandler onInside;
+    public event EventHandler onOutside;
 
 
     public enum Context
@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         Quaternion initialRotation = Quaternion.identity;
-        Vector3 initialPosition = new Vector3(0f, 2f, 0f);
+        Vector3 initialPosition = new Vector3(0f, 20f, 0f);
 
         m_Rigidbody = GetComponent<Rigidbody>();
         //m_Collider = GetComponent<Collider>();
@@ -162,6 +162,7 @@ public class Player : MonoBehaviour
             if (container.buildingType == "Building")
             {
                 SetContext(Context.Inside, true);
+                onInside?.Invoke(this, EventArgs.Empty);
             }
         }
     }
@@ -178,6 +179,7 @@ public class Player : MonoBehaviour
             if (container.buildingType == "Building")
             {
                 SetContext(Context.Inside, false);
+                onOutside?.Invoke(this, EventArgs.Empty);
             }
         }
     }

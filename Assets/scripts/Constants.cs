@@ -5,7 +5,7 @@ using System.IO;
 
 public class Constants 
 {
-    public const int chunk_width_tiles = 20;
+    public const int chunk_width = 16;
 
     public string data_path = Application.dataPath + "/data";
 

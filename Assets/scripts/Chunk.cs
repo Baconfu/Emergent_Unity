@@ -9,13 +9,15 @@ using System.Linq;
 
 public class Chunk : MonoBehaviour
 {
-
-    private GameObject[] spaces = new GameObject[2000];
+    private GameObject[] spaces = new GameObject[4096];
     private Vector3Int position;
+    private World world;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        world = GameObject.Find("World").GetComponent<World>();
+        
         position = new Vector3Int(Mathf.RoundToInt(transform.position[0]),
             Mathf.RoundToInt(transform.position[1]),
             Mathf.RoundToInt(transform.position[2]));
@@ -47,19 +49,44 @@ public class Chunk : MonoBehaviour
         //Debug.Log(buffer.Count);
         //Debug.Log(buffer[0].type);
 
-        GameObject root = new GameObject(position.ToString());
-        root.transform.position = position;
+        gameObject.name = position.ToString();
+        transform.position = position;
+        UnityEngine.Random.InitState(3);
 
         int iterator = 0;
-        for (int z = 0; z < 5; z++)
+        for (int z = 0; z < Constants.chunk_width; z++)
         {
-            for (int y = 0; y < Constants.chunk_width_tiles; y++)
+            for (int y = 0; y < Constants.chunk_width; y++)
             {
-                for (int x = 0; x < Constants.chunk_width_tiles; x++)
+                for (int x = 0; x < Constants.chunk_width; x++)
                 {
-                    spaces[iterator] = Instantiate(Resources.Load("UnitSpace") as GameObject, new Vector3(x, z, y), Quaternion.identity, root.transform);
-                    spaces[iterator].name = "(" + x.ToString() + ", " + y.ToString() + ", " + z.ToString() + ")";
 
+                    spaces[iterator] = Instantiate(Resources.Load("UnitSpace") as GameObject, new Vector3(x, z, y), Quaternion.identity, transform);
+                    spaces[iterator].name = "(" + x.ToString() + ", " + z.ToString() + ", " + y.ToString() + ")";
+                    if (z <= 8)
+                    {
+                        spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.rock);
+                    }
+
+                    if (z < 12 && z > 8)
+                    {
+                        if (spaces[(z - 1) * Constants.chunk_width * Constants.chunk_width + y * Constants.chunk_width + x].GetComponent<UnitSpace>().GetUnitSpaceType() == UnitSpace.UnitSpaceType.rock
+                            && UnityEngine.Random.Range(0, 9) < 5)
+                        {
+                            spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.rock);
+                        }
+                        else
+                        {
+                            spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.air);
+
+                        }
+                    }
+                    if (z >= 12)
+                    {
+                        spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.air);
+
+                    }
+                    /*
                     if (buffer[iterator].type == "terrain")
                     {
                         spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.rock);
@@ -67,13 +94,12 @@ public class Chunk : MonoBehaviour
                     if (buffer[iterator].type == "air")
                     {
                         spaces[iterator].GetComponent<UnitSpace>().SetUnitSpaceType(UnitSpace.UnitSpaceType.air);
-                    }
+                    }*/
                     iterator++;
                 }
             }
         }
-        root.transform.SetParent(GameObject.Find("UnitSpaceCollection").transform);
-
+        transform.SetParent(GameObject.Find("UnitSpaceCollection").transform);
     }
 
     // Update is called once per frame
@@ -86,4 +112,16 @@ public class Chunk : MonoBehaviour
     {
         
     }
+
+    GameObject GetUnitSpace (int index)
+    {
+        return spaces[index];
+    }
+
+    GameObject GetUnitSpace(Vector3Int pos)
+    {
+        return spaces[pos[0] + pos[1] * Constants.chunk_width + pos[2] * (int)Mathf.Pow(Constants.chunk_width, 2)];
+    }
+
+
 }
