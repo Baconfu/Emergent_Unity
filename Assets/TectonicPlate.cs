@@ -14,7 +14,10 @@ public class TectonicPlate
 
     private int hexRadius = 500;
 
-    private Vector3 drift;
+    private Vector2 drift;
+    public Vector2 GetDrift(){return drift;}
+    private float elevation;
+    public float GetElevation(){return elevation;}
 
 
     private TectonicPlate[] neighbours = new TectonicPlate[6];
@@ -30,8 +33,13 @@ public class TectonicPlate
     {
         realPos = RealPos;
         pos = Pos;
-        
+
+        float angle = Random.Range(0.0f,6.2831f);
+        float magnitude = Random.Range(0.1f,2.0f);
+        drift = new Vector2(Mathf.Cos(angle),Mathf.Sin(angle)) * magnitude;
     }
+
+
 
 
     public void setNeighbours(TectonicPlate[] adjacent)
@@ -41,6 +49,7 @@ public class TectonicPlate
             if(adjacent[i] != null){
                 adjacent[i].setNeighbour((i+3)%6,this);
                 edges[i] = adjacent[i].GetRidge((i+3)%6);
+                
                 border[i] = adjacent[i].GetHex((i+2)%6);
                 if(i == 0){
                     border[5] = adjacent[0].GetHex(3);
@@ -48,6 +57,7 @@ public class TectonicPlate
                 else{
                     border[i-1] = adjacent[i].GetHex((i+3)%6);
                 }
+                
             }
         }
     }
@@ -69,9 +79,10 @@ public class TectonicPlate
             }else{
                 edges[i] = new Ridge(border[i-1],border[i]);
             }
-            edges[i].CreatePath();
+            //edges[i].CreatePath();
 
         }
+        edges[i].RegisterNeighbour(this);
 
         }
     }
@@ -83,6 +94,9 @@ public class TectonicPlate
             if(border[i] == null){
                 float angle = (float)3.1415926/6 + i*(float)3.1415926/3;
                 border[i] = new Hex(realPos + new Vector2(2*hexRadius * Mathf.Cos(angle), 2*hexRadius * Mathf.Sin(angle)));
+                border[i].RegisterAdjacent(this);
+            }else{
+                border[i].RegisterAdjacent(this);
             }
         }
     }
