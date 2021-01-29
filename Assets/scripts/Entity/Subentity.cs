@@ -35,7 +35,7 @@ public class Subentity : Entity
     public override void SetProposed(bool desired)
     {
         base.SetProposed(desired);
-        /*if (desired)
+        if (desired)
         {
             foreach (MeshRenderer r in GetComponentsInChildren<MeshRenderer>())
             {
@@ -55,7 +55,7 @@ public class Subentity : Entity
                 Array.Copy(newMaterials, previousMaterials, newMaterials.Length - 1);
                 r.materials = previousMaterials;
             }
-        }*/
+        }
     }
 
 

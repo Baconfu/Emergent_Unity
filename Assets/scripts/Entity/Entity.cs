@@ -62,6 +62,7 @@ public class Entity : MonoBehaviour
             foreach (Collider col in GetComponentsInChildren<Collider>())
             {
                 col.isTrigger = false;
+                Debug.Log(col.ToString() + "istrigger false");
             }
         }
     }

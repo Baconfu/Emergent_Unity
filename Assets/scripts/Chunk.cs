@@ -10,6 +10,13 @@ using System.Linq;
 public class Chunk : MonoBehaviour
 {
 
+    Mesh mesh;
+    GameObject meshObject;
+
+    Vector3[] vertices;
+    Vector3[] rawVertices;
+    int[] triangles;
+
     private GameObject[] spaces = new GameObject[2000];
     private Vector3Int position;
 
@@ -50,7 +57,62 @@ public class Chunk : MonoBehaviour
         GameObject root = new GameObject(position.ToString());
         root.transform.position = position;
 
-        int iterator = 0;
+        gameObject.AddComponent<MeshFilter>();
+        gameObject.AddComponent<Renderer>();
+        mesh = GetComponent<MeshFilter>().mesh;
+
+        vertices = new Vector3[(int)Mathf.Pow(Constants.chunk_width_tiles + 1, 2)];
+        //without the 'sides' (the extra row & column of vertices to make chunk meshes connect together)
+        rawVertices = new Vector3[(int)Mathf.Pow(Constants.chunk_width_tiles, 2)];
+
+        CreateMesh();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void CreateMesh()
+    {
+        
+        mesh.Clear();
+        
+        float[] heightArray = new float[(int)Mathf.Pow(Constants.chunk_width_tiles, 2)];
+
+        for(int i=0; i<heightArray.Length; i++)
+        {
+            heightArray[i] = float.Parse(
+                System.IO.File.ReadAllText(Application.dataPath + "/Resources/export.txt").
+                Split(',')[i]);
+        }
+
+        //meshObject = new GameObject("Ground", typeof(MeshFilter), typeof(Renderer));
+
+        for (int x = 0; x < Constants.chunk_width_tiles; x++)
+        {
+            for (int z = 0; z < Constants.chunk_width_tiles; z++)
+            {
+                rawVertices[x + z * Constants.chunk_width_tiles].x = x;
+                rawVertices[x + z * Constants.chunk_width_tiles].z = z;
+
+
+                rawVertices[x + z * Constants.chunk_width_tiles].y = heightArray[x + z * Constants.chunk_width_tiles];
+            }
+        }
+
+
+        //set 'mesh' symbol's vertices and triangles to be lists generated above
+
+
+
+
+        //meshObject.GetComponent<MeshFilter>().mesh = mesh;
+
+
+        /*int iterator = 0;
         for (int z = 0; z < 5; z++)
         {
             for (int y = 0; y < Constants.chunk_width_tiles; y++)
@@ -73,17 +135,6 @@ public class Chunk : MonoBehaviour
             }
         }
         root.transform.SetParent(GameObject.Find("UnitSpaceCollection").transform);
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void Load(Vector3 v)
-    {
-        
+        */
     }
 }

@@ -41,7 +41,7 @@ public class Metaentity : Entity
             {
                 gameObject.name = originalName;
             }
-            occupation.isTrigger = true;
+            
         }
 
         
